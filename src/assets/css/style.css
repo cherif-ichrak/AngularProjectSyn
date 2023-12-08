@@ -179,7 +179,7 @@ ul.nav-second-level {
   background: #293846;
 }
 .nav > li.active {
-  border-left: 4px solid #19aa8d;
+  border-left: 4px solid #116977;
   background: #293846;
 }
 .nav.nav-second-level > li.active {
@@ -290,7 +290,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
   color: white;
 }
 .navbar-default .special_link a:hover {
-  background: #17987e !important;
+  background: #116977 !important;
   color: white;
 }
 .navbar-default .special_link a span.label {
@@ -298,7 +298,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
   color: #116977;
 }
 .navbar-default .landing_link a {
-  background: #1cc09f;
+  background: #116977;
   color: white;
 }
 .navbar-default .landing_link a:hover {
@@ -307,7 +307,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
 }
 .navbar-default .landing_link a span.label {
   background: #fff;
-  color: #1cc09f;
+  color: #116977;
 }
 .logo-element {
   text-align: center;
