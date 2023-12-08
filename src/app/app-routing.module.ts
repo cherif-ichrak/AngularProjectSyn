@@ -8,6 +8,7 @@ import { LocauxComponent } from './components/locaux/locaux.component';
 import { DependancesComponent } from './components/dependances/dependances.component';
 import { AnnoncesComponent } from './components/annonces/annonces.component';
 import { RepertoireComponent } from './components/repertoire/repertoire.component';
+import { CotisationComponent } from './components/cotisation/cotisation.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'Dependances', component: DependancesComponent },
   { path: 'Annonces', component: AnnoncesComponent },
   { path: 'Repertoire', component: RepertoireComponent },
+  { path: 'Cotisation', component: CotisationComponent },
 
   { path: 'Locaux', component: LocauxComponent },
 ];
