@@ -1,0 +1,379 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Encaisement</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Caisse</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong>Encaisement</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_clients_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_length" id="table_clients_length">
+                        <label
+                          >Afficher
+                          <select
+                            name="table_clients_length"
+                            aria-controls="table_clients"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div id="table_clients_filter" class="dataTables_filter">
+                        <label
+                          >Rechercher :
+                          <input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_clients"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table
+                        id="table_clients"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_clients_info"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              N° Encaissement
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Client
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Intitulé
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 20%"
+                            >
+                              Total TTC
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Montant Bruit
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Montant RS
+                            </th>
+
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              RS TVA
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Ecart
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Saisi Par
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Saisi Le
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Note
+                            </th>
+
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>CSE2200000003</td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td>Sa</td>
+                            <td>13/10/2022</td>
+                            <td>Divers</td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CSE2200000003</td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td>Sa</td>
+                            <td>13/10/2022</td>
+                            <td>Divers</td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CSE2200000003</td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">1 000,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td class="text-right">0,000</td>
+                            <td>Sa</td>
+                            <td>13/10/2022</td>
+                            <td>Divers</td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div
+                        id="table_clients_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

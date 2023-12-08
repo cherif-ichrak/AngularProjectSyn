@@ -1,0 +1,354 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Activité Caisse</h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a>Finance</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a>Traitement</a>
+      </li>
+
+      <li class="breadcrumb-item active">
+        <strong> Activité Caisse</strong>
+      </li>
+    </ol>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_clients_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div class="dataTables_length" id="table_clients_length">
+                        <label
+                          >Afficher
+                          <select
+                            name="table_clients_length"
+                            aria-controls="table_clients"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div id="table_clients_filter" class="dataTables_filter">
+                        <label
+                          >Rechercher :
+                          <input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_clients"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      Caisse :
+                      <br />
+                      Caissier:
+                      <br />
+
+                      <table
+                        id="table_clients"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_clients_info"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              N° FOLIO
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date Ouverture
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date Clôture
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Encaissement
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Décaissement
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Solde Final
+                            </th>
+
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Clôturée
+                            </th>
+
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_clients"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>CS-1</td>
+                            <td>27/04/2022 10:0</td>
+                            <td>27/04/2022 10:0</td>
+
+                            <td>0,000</td>
+                            <td>3 300,000</td>
+                            <td>500,000</td>
+                            <td>
+                              <label> </label> &nbsp;&nbsp;&nbsp;&nbsp;<input
+                                type="checkbox"
+                                checked
+                              />
+                              <br />
+                            </td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CS-1</td>
+                            <td>27/04/2022 10:0</td>
+                            <td>27/04/2022 10:0</td>
+                            <td>0,000</td>
+                            <td>3 300,000</td>
+                            <td>500,000</td>
+                            <td>
+                              <label> </label> &nbsp;&nbsp;&nbsp;&nbsp;<input
+                                type="checkbox"
+                                class="js-switch_3"
+                                checked
+                              />
+                              <br />
+                            </td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CS-1</td>
+                            <td>27/04/2022 10:0</td>
+                            <td>27/04/2022 10:0</td>
+
+                            <td>0,000</td>
+                            <td>3 300,000</td>
+                            <td>500,000</td>
+                            <td>
+                              <label> </label> &nbsp;&nbsp;&nbsp;&nbsp;<input
+                                type="checkbox"
+                                class="js-switch_3"
+                                checked
+                              />
+                              <br />
+                            </td>
+
+                            <td class="overflow-hidden">
+                              <div>
+                                <button
+                                  type="button"
+                                  class="btn btn-xs btn-primary"
+                                >
+                                  Imprimer
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div
+                        id="table_clients_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_clients_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_clients_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_clients_previous"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              href=""
+                              aria-controls="table_clients"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_clients_next"
+                          >
+                            <a
+                              aria-controls="table_clients"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

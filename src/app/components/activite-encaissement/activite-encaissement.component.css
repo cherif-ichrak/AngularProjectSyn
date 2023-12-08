@@ -1,0 +1,28 @@
+.face-snap-card-entete {
+  box-sizing: border-box;
+  border-color: black;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+.face-snap-card {
+  box-sizing: border-box;
+  border-color: black;
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+.face-snap-card-table {
+  box-sizing: content-box;
+  border-color: black;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+body {
+  margin-top: 20px;
+  background-color: #eee;
+}

@@ -17,6 +17,9 @@ import { DependancesComponent } from './components/dependances/dependances.compo
 import { AnnoncesComponent } from './components/annonces/annonces.component';
 import { RepertoireComponent } from './components/repertoire/repertoire.component';
 import { CotisationComponent } from './components/cotisation/cotisation.component';
+import { ActiviteDepenseComponent } from './components/activite-depense/activite-depense.component';
+import { ActiviteEncaissementComponent } from './components/activite-encaissement/activite-encaissement.component';
+import { ActiviteVersementComponent } from './components/activite-versement/activite-versement.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { CotisationComponent } from './components/cotisation/cotisation.componen
     DependancesComponent,
     AnnoncesComponent,
     RepertoireComponent,
+    ActiviteDepenseComponent,
+    ActiviteEncaissementComponent,
+    ActiviteVersementComponent,
     CotisationComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
