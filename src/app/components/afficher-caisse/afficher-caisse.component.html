@@ -1066,7 +1066,7 @@
                           role="dialog"
                           aria-hidden="true"
                         >
-                          <div class="modal-dialog">
+                          <div class="modal-dialog modal-lg">
                             <div class="modal-content animated bounceInRight">
                               <div class="modal-header">
                                 <h6 class="modal-title">Modifier Dépense</h6>
@@ -1103,7 +1103,7 @@
                                       </div>
                                       <div class="form-row">
                                         <div class="col-md-6 mb-3">
-                                          <label>Dépense </label>
+                                          <label>Montant </label>
                                           <input
                                             type="text"
                                             class="form-control"
@@ -1475,56 +1475,170 @@
                                     <form>
                                       <fieldset>
                                         <div class="form-row">
-                                          <div class="col-md-6 mb-3">
+                                          <div class="col-md-12 mb-3">
                                             <label> Type </label>
                                             <select class="form-control">
-                                              <option value="" selected>
+                                              <option value="option1" selected>
                                                 Chéque
                                               </option>
-                                              <option value="option1">
+                                              <option value="option2">
                                                 Espece
                                               </option>
                                             </select>
                                           </div>
+                                        </div>
+                                      </fieldset>
+                                      <br />
+                                      <fieldset>
+                                        <legend>Espece</legend>
+                                        <div class="form-row">
                                           <div class="col-md-6 mb-3">
-                                            <label>Montant </label>
+                                            <label>Banque </label>
+                                            <select class="form-control">
+                                              <option>Banque 1</option>
+                                              <option>Banque 2</option>
+                                              <option>Banque 3</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label>RIB </label>
+                                            <select class="form-control">
+                                              <option>RIB 1</option>
+                                              <option>RIB 2</option>
+                                              <option>RIB 3</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="form-row">
+                                          <div class="col-md-6 mb-3">
+                                            <label>Solde Total </label>
+                                            <input
+                                              class="form-control"
+                                              type="text"
+                                            />
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label>Montant Versment </label>
                                             <input
                                               class="form-control"
                                               type="text"
                                             />
                                           </div>
                                         </div>
-
                                         <div class="form-row">
                                           <div class="col-md-6 mb-3">
-                                            <label>Chéque </label>
+                                            <label>N° Document</label>
+                                            <input
+                                              class="form-control"
+                                              type="text"
+                                            />
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label>Note </label>
+                                            <input
+                                              class="form-control"
+                                              type="text"
+                                            />
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                      <br />
+                                      <fieldset>
+                                        <legend>Chéque</legend>
+                                        <div class="form-row">
+                                          <table
+                                            class="table table-stripped table-bordered"
+                                            style="width: 100%"
+                                          >
+                                            <thead>
+                                              <tr>
+                                                <th style="width: 5%"></th>
+                                                <th style="width: 15%">
+                                                  N° Pièce
+                                                </th>
+                                                <th style="width: 15%">Tiré</th>
+                                                <th style="width: 20%">
+                                                  Banque
+                                                </th>
+                                                <th style="width: 10%">
+                                                  Montant
+                                                </th>
+                                                <th style="width: 15%">
+                                                  Échéance
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  <input
+                                                    type="checkbox"
+                                                    checked
+                                                    class="i-checks"
+                                                    name="input[]"
+                                                  />
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <input
+                                                    type="checkbox"
+                                                    checked
+                                                    class="i-checks"
+                                                    name="input[]"
+                                                  />
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <div class="form-row">
+                                          <div class="col-md-12 mb-3">
+                                            <label>Type Versement </label>
                                             <select class="form-control">
-                                              <option value="" selected>
-                                                Chéque 1
-                                              </option>
-                                              <option value="option1">
-                                                Chéque 2
-                                              </option>
-                                              <option value="">Chéque 3</option>
-                                              <option value="option1">
-                                                Chéque 4
-                                              </option>
+                                              <option>A l'encaissement</option>
+                                              <option>A l'escompte</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="form-row">
+                                          <div class="col-md-6 mb-3">
+                                            <label>Banque </label>
+                                            <select class="form-control">
+                                              <option>Banque 1</option>
+                                              <option>Banque 2</option>
+                                              <option>Banque 3</option>
                                             </select>
                                           </div>
                                           <div class="col-md-6 mb-3">
-                                            <label>Effet </label>
+                                            <label>RIB </label>
                                             <select class="form-control">
-                                              <option value="" selected>
-                                                Effet 1
-                                              </option>
-                                              <option value="option1">
-                                                Effet 2
-                                              </option>
-                                              <option value="">Effet 3</option>
-                                              <option value="option1">
-                                                Effet 4
-                                              </option>
+                                              <option>RIB 1</option>
+                                              <option>RIB 2</option>
+                                              <option>RIB 3</option>
                                             </select>
+                                          </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                          <div class="col-md-12 mb-3">
+                                            <label>N° Document</label>
+                                            <input
+                                              class="form-control"
+                                              type="text"
+                                            />
                                           </div>
                                         </div>
                                       </fieldset>
@@ -1546,7 +1660,7 @@
                                           type="button"
                                           class="btn btn-primary btn-xs dropdown-toggle"
                                         >
-                                          Modifier
+                                          Ajouter
                                         </button>
                                       </div>
                                     </div>
@@ -2082,7 +2196,7 @@
                           </div>
                           <div class="form-row">
                             <div class="col-md-6 mb-3">
-                              <label>Dépense </label>
+                              <label>Montant </label>
                               <input
                                 type="text"
                                 class="form-control"
@@ -2191,37 +2305,143 @@
                     <form>
                       <fieldset>
                         <div class="form-row">
-                          <div class="col-md-6 mb-3">
+                          <div class="col-md-12 mb-3">
                             <label> Type </label>
                             <select class="form-control">
-                              <option value="" selected>Chéque</option>
-                              <option value="option1">Espece</option>
+                              <option value="option1" selected>Chéque</option>
+                              <option value="option2">Espece</option>
+                            </select>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <br />
+                      <fieldset>
+                        <legend>Espece</legend>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label>Banque </label>
+                            <select class="form-control">
+                              <option>Banque 1</option>
+                              <option>Banque 2</option>
+                              <option>Banque 3</option>
                             </select>
                           </div>
                           <div class="col-md-6 mb-3">
-                            <label>Montant </label>
+                            <label>RIB </label>
+                            <select class="form-control">
+                              <option>RIB 1</option>
+                              <option>RIB 2</option>
+                              <option>RIB 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label>Solde Total </label>
                             <input class="form-control" type="text" />
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label>Montant Versment </label>
+                            <input class="form-control" type="text" />
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label>N° Document</label>
+                            <input class="form-control" type="text" />
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label>Note </label>
+                            <input class="form-control" type="text" />
+                          </div>
+                        </div>
+                      </fieldset>
+                      <br />
+                      <fieldset>
+                        <legend>Chéque</legend>
+                        <div class="form-row">
+                          <table
+                            class="table table-stripped table-bordered"
+                            style="width: 100%"
+                          >
+                            <thead>
+                              <tr>
+                                <th style="width: 5%"></th>
+                                <th style="width: 15%">N° Pièce</th>
+                                <th style="width: 15%">Tiré</th>
+                                <th style="width: 20%">Banque</th>
+                                <th style="width: 10%">Montant</th>
+                                <th style="width: 15%">Échéance</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input
+                                    type="checkbox"
+                                    checked
+                                    class="i-checks"
+                                    name="input[]"
+                                  />
+                                </td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <input
+                                    type="checkbox"
+                                    checked
+                                    class="i-checks"
+                                    name="input[]"
+                                  />
+                                </td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <label>Type Versement </label>
+                            <select class="form-control">
+                              <option>A l'encaissement</option>
+                              <option>A l'escompte</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label>Banque </label>
+                            <select class="form-control">
+                              <option>Banque 1</option>
+                              <option>Banque 2</option>
+                              <option>Banque 3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label>RIB </label>
+                            <select class="form-control">
+                              <option>RIB 1</option>
+                              <option>RIB 2</option>
+                              <option>RIB 3</option>
+                            </select>
                           </div>
                         </div>
 
                         <div class="form-row">
-                          <div class="col-md-6 mb-3">
-                            <label>Chéque </label>
-                            <select class="form-control">
-                              <option value="" selected>Chéque 1</option>
-                              <option value="option1">Chéque 2</option>
-                              <option value="">Chéque 3</option>
-                              <option value="option1">Chéque 4</option>
-                            </select>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <label>Effet </label>
-                            <select class="form-control">
-                              <option value="" selected>Effet 1</option>
-                              <option value="option1">Effet 2</option>
-                              <option value="">Effet 3</option>
-                              <option value="option1">Effet 4</option>
-                            </select>
+                          <div class="col-md-12 mb-3">
+                            <label>N° Document</label>
+                            <input class="form-control" type="text" />
                           </div>
                         </div>
                       </fieldset>
