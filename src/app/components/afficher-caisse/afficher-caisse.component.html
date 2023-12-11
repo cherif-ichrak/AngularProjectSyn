@@ -41,10 +41,13 @@
                   <div class="panel-options">
                     <ul class="nav nav-tabs">
                       <li class="active">
-                        <a href="#tab-2" data-toggle="tab">Encaissement</a>
+                        <a href="#tab-2" data-toggle="tab">Encaissements</a>
                       </li>
                       <li class="">
-                        <a href="#Depense" data-toggle="tab">Dépense</a>
+                        <a href="#Depense" data-toggle="tab">Dépenses</a>
+                      </li>
+                      <li class="">
+                        <a href="#Versements" data-toggle="tab">Versements</a>
                       </li>
                     </ul>
                   </div>
@@ -310,7 +313,7 @@
                                     <form>
                                       <fieldset>
                                         <div class="form-row">
-                                          <div class="col-md-4 mb-3">
+                                          <div class="col-md-6 mb-3">
                                             <label> Type Règlement</label>
                                             <select class="form-control">
                                               <option value="" selected>
@@ -324,7 +327,7 @@
                                               </option>
                                             </select>
                                           </div>
-                                          <div class="col-md-4 mb-3">
+                                          <div class="col-md-6 mb-3">
                                             <label>Propriétaire </label>
                                             <select class="form-control">
                                               <option value="" selected>
@@ -341,13 +344,6 @@
                                               </option>
                                             </select>
                                           </div>
-                                          <div class="col-md-4 mb-3">
-                                            <label>Montant </label>
-                                            <input
-                                              class="form-control"
-                                              type="text"
-                                            />
-                                          </div>
                                         </div>
 
                                         <div class="form-row">
@@ -361,19 +357,9 @@
                                             ></textarea>
                                           </div>
                                         </div>
-                                        <div class="form-row">
-                                          <div class="col-md-11 mb-3">
-                                            <label>Date </label>
-                                            <input
-                                              type="date"
-                                              class="form-control"
-                                              id="validationDefault04"
-                                              placeholder=""
-                                              required
-                                            />
-                                          </div>
-                                          <div class="col-md-1 mb-3">
-                                            <label><br /></label>
+                                        <div class="form-row text-right">
+                                          <div class="col-md-12 mb-3">
+                                            <label><br /><br /></label>
                                             <input
                                               type="submit"
                                               class="btn btn-primary btn-xs dropdown-toggle"
@@ -459,6 +445,17 @@
                                                     aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
                                                     style="width: 10%"
                                                   >
+                                                    Reste à Payer
+                                                  </th>
+                                                  <th
+                                                    class="sorting"
+                                                    tabindex="0"
+                                                    aria-controls="table_clients"
+                                                    rowspan="1"
+                                                    colspan="1"
+                                                    aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                                    style="width: 10%"
+                                                  >
                                                     Date Début
                                                   </th>
                                                   <th
@@ -490,21 +487,6 @@
                                                   <td class="text-right">
                                                     200
                                                   </td>
-                                                  <td>01/01/2023</td>
-                                                  <td>30/03/2023</td>
-                                                </tr>
-                                                <tr>
-                                                  <td>
-                                                    <input
-                                                      type="checkbox"
-                                                      checked
-                                                      class="i-checks"
-                                                      name="input[]"
-                                                    />
-                                                  </td>
-                                                  <td>COT23001</td>
-                                                  <td>Frais Syndique</td>
-                                                  <td>L.1.1.A</td>
                                                   <td class="text-right">
                                                     200
                                                   </td>
@@ -523,6 +505,30 @@
                                                   <td>COT23001</td>
                                                   <td>Frais Syndique</td>
                                                   <td>L.1.1.A</td>
+                                                  <td class="text-right">
+                                                    200
+                                                  </td>
+                                                  <td class="text-right">
+                                                    200
+                                                  </td>
+                                                  <td>01/01/2023</td>
+                                                  <td>30/03/2023</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>
+                                                    <input
+                                                      type="checkbox"
+                                                      checked
+                                                      class="i-checks"
+                                                      name="input[]"
+                                                    />
+                                                  </td>
+                                                  <td>COT23001</td>
+                                                  <td>Frais Syndique</td>
+                                                  <td>L.1.1.A</td>
+                                                  <td class="text-right">
+                                                    200
+                                                  </td>
                                                   <td class="text-right">
                                                     200
                                                   </td>
@@ -533,14 +539,34 @@
                                               <tfoot>
                                                 <tr>
                                                   <br />
-                                                  <td colspan="5">
+                                                  <td colspan="3">
                                                     <b>Total</b>
                                                   </td>
                                                   <td class="text-right">
                                                     <b>2 000.000</b>
                                                   </td>
+                                                  <td class="text-right">
+                                                    <b>2 000.000</b>
+                                                  </td>
+                                                  <td></td>
+                                                  <td></td>
                                                 </tr>
                                               </tfoot>
+                                            </table>
+                                            <br />
+                                            <table style="width: 100%">
+                                              <tr>
+                                                <td style="width: 80%"></td>
+                                                <td style="width: 10%">
+                                                  <b>Montant</b>
+                                                </td>
+                                                <td style="width: 10%">
+                                                  <input
+                                                    class="from-control"
+                                                    type="text"
+                                                  />
+                                                </td>
+                                              </tr>
                                             </table>
                                           </div>
                                         </div>
@@ -555,23 +581,26 @@
                                             >
                                               <thead>
                                                 <tr>
-                                                  <th style="width: 10%">
+                                                  <th style="width: 20%">
                                                     Mode Réglement
                                                   </th>
-                                                  <th style="width: 10%">
+                                                  <th style="width: 15%">
                                                     N° Pièce
                                                   </th>
-                                                  <th style="width: 10%">
+                                                  <th style="width: 15%">
                                                     Tiré
                                                   </th>
-                                                  <th style="width: 10%">
+                                                  <th style="width: 20%">
                                                     Banque
                                                   </th>
                                                   <th style="width: 10%">
                                                     Montant
                                                   </th>
-                                                  <th style="width: 10%">
+                                                  <th style="width: 15%">
                                                     Échéance
+                                                  </th>
+                                                  <th style="width: 5%">
+                                                    Action
                                                   </th>
                                                 </tr>
                                               </thead>
@@ -581,9 +610,6 @@
                                                     <select
                                                       class="form-control"
                                                     >
-                                                      <option slected>
-                                                        Mode Réglement
-                                                      </option>
                                                       <option>Chéque</option>
                                                       <option>Espéce</option>
                                                     </select>
@@ -627,6 +653,19 @@
                                                       class="form-control"
                                                       placeholder=""
                                                     />
+                                                  </td>
+                                                  <td class="overflow-hidden">
+                                                    <div class="btn-group">
+                                                      <button
+                                                        data-toggle="dropdown"
+                                                        class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                                      >
+                                                        <i
+                                                          class="fa fa-trash-o"
+                                                        >
+                                                        </i>
+                                                      </button>
+                                                    </div>
                                                   </td>
                                                 </tr>
                                                 <tr>
@@ -634,9 +673,6 @@
                                                     <select
                                                       class="form-control"
                                                     >
-                                                      <option slected>
-                                                        Mode Réglement
-                                                      </option>
                                                       <option>Chéque</option>
                                                       <option>Espéce</option>
                                                     </select>
@@ -680,6 +716,19 @@
                                                       class="form-control"
                                                       placeholder=""
                                                     />
+                                                  </td>
+                                                  <td class="overflow-hidden">
+                                                    <div class="btn-group">
+                                                      <button
+                                                        data-toggle="dropdown"
+                                                        class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                                      >
+                                                        <i
+                                                          class="fa fa-trash-o"
+                                                        >
+                                                        </i>
+                                                      </button>
+                                                    </div>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -704,11 +753,11 @@
                                               1 500.000
                                             </td>
                                             <td style="width: 20%">Ecart</td>
-                                            <td
-                                              style="width: 10%"
-                                              class="text-center"
-                                            >
-                                              1500.000
+                                            <td style="width: 20%">
+                                              <input
+                                                class="from-control"
+                                                type="text"
+                                              />
                                             </td>
                                             <td style="width: 20%">
                                               Reste à Payer
@@ -740,7 +789,7 @@
                                           type="button"
                                           class="btn btn-primary btn-xs dropdown-toggle"
                                         >
-                                          Ajouter
+                                          Modifier
                                         </button>
                                       </div>
                                     </div>
@@ -776,24 +825,23 @@
                         <table class="table table-striped">
                           <thead>
                             <tr>
+                              <th style="width: 10%">Type</th>
+
                               <th style="width: 10%">Montant</th>
                               <th style="width: 10%">Date</th>
-                              <th style="width: 40%">Note</th>
-                              <th style="width: 10%">Evenement</th>
-                              <th style="width: 10%">Effectif</th>
+                              <th style="width: 20%">Note</th>
                               <th style="width: 10%">PJ</th>
-
                               <th style="width: 10%">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
+                              <td>Remboursement Frais</td>
+
                               <td class="text-right">100.000</td>
                               <td>12/03/2022</td>
-                              <td>Recharge téléphonique</td>
                               <td></td>
 
-                              <td>Ahmed hassen</td>
                               <td>
                                 <i
                                   class="fa fa-download"
@@ -824,12 +872,12 @@
                               </td>
                             </tr>
                             <tr>
+                              <td>Remboursement Frais</td>
+
                               <td class="text-right">100.000</td>
                               <td>12/03/2022</td>
-                              <td>Recharge téléphonique</td>
-                              <td>Stage de Match</td>
-
                               <td></td>
+
                               <td>
                                 <i
                                   class="fa fa-download"
@@ -853,18 +901,19 @@
                                         >Modifier</a
                                       >
                                     </li>
+
                                     <li><a href="#">Supprimer</a></li>
                                   </ul>
                                 </div>
                               </td>
                             </tr>
                             <tr>
+                              <td>Remboursement Frais</td>
+
                               <td class="text-right">100.000</td>
                               <td>12/03/2022</td>
-                              <td>Recharge téléphonique</td>
                               <td></td>
 
-                              <td></td>
                               <td>
                                 <i
                                   class="fa fa-download"
@@ -888,18 +937,19 @@
                                         >Modifier</a
                                       >
                                     </li>
+
                                     <li><a href="#">Supprimer</a></li>
                                   </ul>
                                 </div>
                               </td>
                             </tr>
                             <tr>
+                              <td>Remboursement Frais</td>
+
                               <td class="text-right">100.000</td>
                               <td>12/03/2022</td>
-                              <td>Recharge téléphonique</td>
-                              <td>Stage de Match</td>
+                              <td></td>
 
-                              <td>Ahmed hassen</td>
                               <td>
                                 <i
                                   class="fa fa-download"
@@ -923,6 +973,79 @@
                                         >Modifier</a
                                       >
                                     </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Remboursement Frais</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>12/03/2022</td>
+                              <td></td>
+
+                              <td>
+                                <i
+                                  class="fa fa-download"
+                                  aria-hidden="true"
+                                ></i>
+                              </td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierDepense"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Remboursement Frais</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>12/03/2022</td>
+                              <td></td>
+
+                              <td>
+                                <i
+                                  class="fa fa-download"
+                                  aria-hidden="true"
+                                ></i>
+                              </td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierDepense"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
                                     <li><a href="#">Supprimer</a></li>
                                   </ul>
                                 </div>
@@ -956,113 +1079,482 @@
                                   ><span class="sr-only">Fermer</span>
                                 </button>
                               </div>
-                              <br /><br />
-
                               <div class="modal-body">
-                                <form>
-                                  <div class="form-row text-center">
-                                    <div class="col-md-12 mb-3">
-                                      <input
-                                        class="btn btn-primary btn-sm"
-                                        value="Montant Disponible : 20 000.000"
-                                        required
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="form-row">
-                                    <div class="col-md-12 mb-3">
-                                      <label>Evenement </label>
-                                      <select class="form-control">
-                                        <option>Stage Préparation</option>
-                                        <option>Stage de Match</option>
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <form>
+                                      <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                          <label>Type </label>
+                                          <select class="form-control">
+                                            <option>Remboursement Frais</option>
+                                            <option>Autres</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <label>Local </label>
+                                          <select class="form-control">
+                                            <option>Local 1</option>
+                                            <option>Local 2</option>
+                                            <option>Local 3</option>
+                                            <option>Local 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                          <label>Dépense </label>
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            id="validationDefault04"
+                                            placeholder=""
+                                            required
+                                          />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <label>Date</label>
+                                          <input
+                                            type="date"
+                                            class="form-control"
+                                            id="validationDefault04"
+                                            placeholder=""
+                                            required
+                                          />
+                                        </div>
+                                      </div>
 
-                                        <option>Entrainements</option>
-                                      </select>
-                                    </div>
+                                      <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                          <label f>Notes </label>
+                                          <textarea
+                                            type="text"
+                                            class="form-control"
+                                            id="validationDefault04"
+                                            placeholder=""
+                                          ></textarea>
+                                        </div>
+                                      </div>
+                                      <div class="form-row">
+                                        <div class="col-md-12 mb-3">
+                                          <label f>PJ </label>
+                                          <input
+                                            type="file"
+                                            class="form-control"
+                                            id="validationDefault04"
+                                            placeholder=""
+                                          />
+                                        </div>
+                                      </div>
+                                    </form>
                                   </div>
-                                  <div class="form-row">
-                                    <div class="col-md-6 mb-3">
-                                      <label>Dépense </label>
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        id="validationDefault04"
-                                        placeholder=""
-                                        required
-                                      />
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                      <label>Date</label>
-                                      <input
-                                        type="date"
-                                        class="form-control"
-                                        id="validationDefault04"
-                                        placeholder=""
-                                        required
-                                      />
-                                    </div>
-                                  </div>
+                                  <div class="col-lg-12">
+                                    <br />
+                                    <div class="row" class="text-right">
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-white btn-xs dropdown-toggle"
+                                          data-dismiss="modal"
+                                        >
+                                          Annuler
+                                        </button>
 
-                                  <div class="form-row">
-                                    <div class="col-md-12 mb-3">
-                                      <label f>Notes </label>
-                                      <textarea
-                                        type="text"
-                                        class="form-control"
-                                        id="validationDefault04"
-                                        placeholder=""
-                                      ></textarea>
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary btn-xs dropdown-toggle"
+                                        >
+                                          Modifier
+                                        </button>
+                                      </div>
                                     </div>
                                   </div>
-                                  <div class="form-row">
-                                    <div class="col-md-12 mb-3">
-                                      <label f>PJ </label>
-                                      <input
-                                        type="file"
-                                        class="form-control"
-                                        id="validationDefault04"
-                                        placeholder=""
-                                      />
-                                    </div>
-                                  </div>
-
-                                  <div class="row" class="text-right">
-                                    <div class="modal-footer">
-                                      <button
-                                        type="button"
-                                        class="btn btn-white btn-xs dropdown-toggle"
-                                        data-dismiss="modal"
-                                      >
-                                        Annuler
-                                      </button>
-
-                                      <button
-                                        type="button"
-                                        class="btn btn-primary btn-xs dropdown-toggle"
-                                      >
-                                        Modifier
-                                      </button>
-                                      <button
-                                        type="button"
-                                        class="btn btn-primary btn-xs dropdown-toggle"
-                                        data-dismiss="modal"
-                                      >
-                                        Envoyer
-                                      </button>
-                                      <button
-                                        type="button"
-                                        class="btn btn-primary btn-xs dropdown-toggle"
-                                        data-dismiss="modal"
-                                      >
-                                        Imprimer
-                                      </button>
-                                    </div>
-                                  </div>
-                                </form>
+                                </div>
                               </div>
                             </div>
                           </div>
-                          <br /><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="Versements">
+                      <div class="row">
+                        <div class="col-sm-3 pull-right">
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              placeholder="Rechercher"
+                              class="input-sm form-control"
+                            />
+                            <span class="input-group-btn">
+                              <button
+                                type="button"
+                                class="btn btn-sm btn-primary"
+                              >
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th style="width: 10%">Type</th>
+                              <th style="width: 10%">Montant</th>
+                              <th style="width: 10%">Effet</th>
+                              <th style="width: 10%">Chéque</th>
+                              <th style="width: 10%">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Espece</td>
+
+                              <td class="text-right">100.000</td>
+                              <td>-</td>
+                              <td></td>
+
+                              <td class="overflow-hidden">
+                                <div class="btn-group">
+                                  <button
+                                    data-toggle="dropdown"
+                                    class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                  >
+                                    Action <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        data-toggle="modal"
+                                        data-target="#ModifierVersement"
+                                        >Modifier</a
+                                      >
+                                    </li>
+
+                                    <li><a href="#">Supprimer</a></li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td colspan="4"><b>Total</b></td>
+                              <td><b>200.000</b></td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <div
+                          class="modal inmodal"
+                          id="ModifierVersement"
+                          tabindex="-1"
+                          role="dialog"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content animated bounceInRight">
+                              <div class="modal-header">
+                                <h6 class="modal-title">Modifier Versement</h6>
+                                <button
+                                  type="button"
+                                  class="close"
+                                  data-dismiss="modal"
+                                >
+                                  <span aria-hidden="true">&times;</span
+                                  ><span class="sr-only">Fermer</span>
+                                </button>
+                              </div>
+
+                              <div class="modal-body">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <form>
+                                      <fieldset>
+                                        <div class="form-row">
+                                          <div class="col-md-6 mb-3">
+                                            <label> Type </label>
+                                            <select class="form-control">
+                                              <option value="" selected>
+                                                Chéque
+                                              </option>
+                                              <option value="option1">
+                                                Espece
+                                              </option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label>Montant </label>
+                                            <input
+                                              class="form-control"
+                                              type="text"
+                                            />
+                                          </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                          <div class="col-md-6 mb-3">
+                                            <label>Chéque </label>
+                                            <select class="form-control">
+                                              <option value="" selected>
+                                                Chéque 1
+                                              </option>
+                                              <option value="option1">
+                                                Chéque 2
+                                              </option>
+                                              <option value="">Chéque 3</option>
+                                              <option value="option1">
+                                                Chéque 4
+                                              </option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                            <label>Effet </label>
+                                            <select class="form-control">
+                                              <option value="" selected>
+                                                Effet 1
+                                              </option>
+                                              <option value="option1">
+                                                Effet 2
+                                              </option>
+                                              <option value="">Effet 3</option>
+                                              <option value="option1">
+                                                Effet 4
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                    </form>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <br />
+                                    <div class="row" class="text-right">
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-white btn-xs dropdown-toggle"
+                                          data-dismiss="modal"
+                                        >
+                                          Annuler
+                                        </button>
+
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary btn-xs dropdown-toggle"
+                                        >
+                                          Modifier
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1110,7 +1602,7 @@
                         <form>
                           <fieldset>
                             <div class="form-row">
-                              <div class="col-md-4 mb-3">
+                              <div class="col-md-6 mb-3">
                                 <label> Type Règlement</label>
                                 <select class="form-control">
                                   <option value="" selected>
@@ -1124,7 +1616,7 @@
                                   </option>
                                 </select>
                               </div>
-                              <div class="col-md-4 mb-3">
+                              <div class="col-md-6 mb-3">
                                 <label>Propriétaire </label>
                                 <select class="form-control">
                                   <option value="" selected>
@@ -1141,10 +1633,6 @@
                                   </option>
                                 </select>
                               </div>
-                              <div class="col-md-4 mb-3">
-                                <label>Montant </label>
-                                <input class="form-control" type="text" />
-                              </div>
                             </div>
 
                             <div class="form-row">
@@ -1158,19 +1646,9 @@
                                 ></textarea>
                               </div>
                             </div>
-                            <div class="form-row">
-                              <div class="col-md-11 mb-3">
-                                <label>Date </label>
-                                <input
-                                  type="date"
-                                  class="form-control"
-                                  id="validationDefault04"
-                                  placeholder=""
-                                  required
-                                />
-                              </div>
-                              <div class="col-md-1 mb-3">
-                                <label><br /></label>
+                            <div class="form-row text-right">
+                              <div class="col-md-12 mb-3">
+                                <label><br /><br /></label>
                                 <input
                                   type="submit"
                                   class="btn btn-primary btn-xs dropdown-toggle"
@@ -1256,6 +1734,17 @@
                                         aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
                                         style="width: 10%"
                                       >
+                                        Reste à Payer
+                                      </th>
+                                      <th
+                                        class="sorting"
+                                        tabindex="0"
+                                        aria-controls="table_clients"
+                                        rowspan="1"
+                                        colspan="1"
+                                        aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                        style="width: 10%"
+                                      >
                                         Date Début
                                       </th>
                                       <th
@@ -1285,21 +1774,6 @@
                                       <td>Frais Syndique</td>
                                       <td>L.1.1.A</td>
                                       <td class="text-right">200</td>
-                                      <td>01/01/2023</td>
-                                      <td>30/03/2023</td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <input
-                                          type="checkbox"
-                                          checked
-                                          class="i-checks"
-                                          name="input[]"
-                                        />
-                                      </td>
-                                      <td>COT23001</td>
-                                      <td>Frais Syndique</td>
-                                      <td>L.1.1.A</td>
                                       <td class="text-right">200</td>
                                       <td>01/01/2023</td>
                                       <td>30/03/2023</td>
@@ -1316,6 +1790,24 @@
                                       <td>COT23001</td>
                                       <td>Frais Syndique</td>
                                       <td>L.1.1.A</td>
+                                      <td class="text-right">200</td>
+                                      <td class="text-right">200</td>
+                                      <td>01/01/2023</td>
+                                      <td>30/03/2023</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input
+                                          type="checkbox"
+                                          checked
+                                          class="i-checks"
+                                          name="input[]"
+                                        />
+                                      </td>
+                                      <td>COT23001</td>
+                                      <td>Frais Syndique</td>
+                                      <td>L.1.1.A</td>
+                                      <td class="text-right">200</td>
                                       <td class="text-right">200</td>
                                       <td>01/01/2023</td>
                                       <td>30/03/2023</td>
@@ -1324,12 +1816,31 @@
                                   <tfoot>
                                     <tr>
                                       <br />
-                                      <td colspan="5"><b>Total</b></td>
+                                      <td colspan="3">
+                                        <b>Total</b>
+                                      </td>
                                       <td class="text-right">
                                         <b>2 000.000</b>
                                       </td>
+                                      <td class="text-right">
+                                        <b>2 000.000</b>
+                                      </td>
+                                      <td></td>
+                                      <td></td>
                                     </tr>
                                   </tfoot>
+                                </table>
+                                <br />
+                                <table style="width: 100%">
+                                  <tr>
+                                    <td style="width: 80%"></td>
+                                    <td style="width: 10%">
+                                      <b>Montant</b>
+                                    </td>
+                                    <td style="width: 10%">
+                                      <input class="from-control" type="text" />
+                                    </td>
+                                  </tr>
                                 </table>
                               </div>
                             </div>
@@ -1344,21 +1855,19 @@
                                 >
                                   <thead>
                                     <tr>
-                                      <th style="width: 10%">Mode Réglement</th>
-                                      <th style="width: 10%">N° Pièce</th>
-                                      <th style="width: 10%">Tiré</th>
-                                      <th style="width: 10%">Banque</th>
+                                      <th style="width: 20%">Mode Réglement</th>
+                                      <th style="width: 15%">N° Pièce</th>
+                                      <th style="width: 15%">Tiré</th>
+                                      <th style="width: 20%">Banque</th>
                                       <th style="width: 10%">Montant</th>
-                                      <th style="width: 10%">Échéance</th>
+                                      <th style="width: 15%">Échéance</th>
+                                      <th style="width: 5%">Action</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
                                       <td>
                                         <select class="form-control">
-                                          <option slected>
-                                            Mode Réglement
-                                          </option>
                                           <option>Chéque</option>
                                           <option>Espéce</option>
                                         </select>
@@ -1398,14 +1907,21 @@
                                           class="form-control"
                                           placeholder=""
                                         />
+                                      </td>
+                                      <td class="overflow-hidden">
+                                        <div class="btn-group">
+                                          <button
+                                            data-toggle="dropdown"
+                                            class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                          >
+                                            <i class="fa fa-trash-o"> </i>
+                                          </button>
+                                        </div>
                                       </td>
                                     </tr>
                                     <tr>
                                       <td>
                                         <select class="form-control">
-                                          <option slected>
-                                            Mode Réglement
-                                          </option>
                                           <option>Chéque</option>
                                           <option>Espéce</option>
                                         </select>
@@ -1445,6 +1961,16 @@
                                           class="form-control"
                                           placeholder=""
                                         />
+                                      </td>
+                                      <td class="overflow-hidden">
+                                        <div class="btn-group">
+                                          <button
+                                            data-toggle="dropdown"
+                                            class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                          >
+                                            <i class="fa fa-trash-o"> </i>
+                                          </button>
+                                        </div>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -1464,8 +1990,8 @@
                                   1 500.000
                                 </td>
                                 <td style="width: 20%">Ecart</td>
-                                <td style="width: 10%" class="text-center">
-                                  1500.000
+                                <td style="width: 20%">
+                                  <input class="from-control" type="text" />
                                 </td>
                                 <td style="width: 20%">Reste à Payer</td>
                                 <td style="width: 10%" class="text-center">
@@ -1523,7 +2049,7 @@
               role="dialog"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInRight">
                   <div class="modal-header">
                     <h6 class="modal-title">Ajouter Dépense</h6>
@@ -1532,113 +2058,196 @@
                       ><span class="sr-only">Fermer</span>
                     </button>
                   </div>
-                  <br /><br />
-
                   <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <form>
+                          <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label>Type </label>
+                              <select class="form-control">
+                                <option>Remboursement Frais</option>
+                                <option>Autres</option>
+                              </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label>Local </label>
+                              <select class="form-control">
+                                <option>Local 1</option>
+                                <option>Local 2</option>
+                                <option>Local 3</option>
+                                <option>Local 4</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                              <label>Dépense </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="validationDefault04"
+                                placeholder=""
+                                required
+                              />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label>Date</label>
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="validationDefault04"
+                                placeholder=""
+                                required
+                              />
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                              <label f>Notes </label>
+                              <textarea
+                                type="text"
+                                class="form-control"
+                                id="validationDefault04"
+                                placeholder=""
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="col-md-12 mb-3">
+                              <label f>PJ </label>
+                              <input
+                                type="file"
+                                class="form-control"
+                                id="validationDefault04"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-12">
+                        <br />
+                        <div class="row" class="text-right">
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-white btn-xs dropdown-toggle"
+                              data-dismiss="modal"
+                            >
+                              Annuler
+                            </button>
+
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-xs dropdown-toggle"
+                            >
+                              Ajouter
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="overflow-hidden">
+            <div container="body">
+              <input
+                data-toggle="modal"
+                data-target="#myModalVersement"
+                class="btn btn-primary btn-sm"
+                value="Versement"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal inmodal"
+          id="myModalVersement"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content animated bounceInRight">
+              <div class="modal-header">
+                <h6 class="modal-title">Ajouter Versement</h6>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span
+                  ><span class="sr-only">Fermer</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-12">
                     <form>
-                      <div class="form-row text-center">
-                        <div class="col-md-12 mb-3">
-                          <input
-                            class="btn btn-primary btn-sm"
-                            value="Montant Disponible : 20 000.000"
-                            required
-                          />
+                      <fieldset>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label> Type </label>
+                            <select class="form-control">
+                              <option value="" selected>Chéque</option>
+                              <option value="option1">Espece</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label>Montant </label>
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-12 mb-3">
-                          <label>Evenement </label>
-                          <select class="form-control">
-                            <option>Stage Préparation</option>
-                            <option>Stage de Match</option>
 
-                            <option>Entrainements</option>
-                          </select>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label>Chéque </label>
+                            <select class="form-control">
+                              <option value="" selected>Chéque 1</option>
+                              <option value="option1">Chéque 2</option>
+                              <option value="">Chéque 3</option>
+                              <option value="option1">Chéque 4</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label>Effet </label>
+                            <select class="form-control">
+                              <option value="" selected>Effet 1</option>
+                              <option value="option1">Effet 2</option>
+                              <option value="">Effet 3</option>
+                              <option value="option1">Effet 4</option>
+                            </select>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                          <label>Dépense </label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="validationDefault04"
-                            placeholder=""
-                            required
-                          />
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <label>Date</label>
-                          <input
-                            type="date"
-                            class="form-control"
-                            id="validationDefault04"
-                            placeholder=""
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="col-md-12 mb-3">
-                          <label f>Notes </label>
-                          <textarea
-                            type="text"
-                            class="form-control"
-                            id="validationDefault04"
-                            placeholder=""
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-12 mb-3">
-                          <label f>PJ </label>
-                          <input
-                            type="file"
-                            class="form-control"
-                            id="validationDefault04"
-                            placeholder=""
-                          />
-                        </div>
-                      </div>
-
-                      <div class="row" class="text-right">
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-white btn-xs dropdown-toggle"
-                            data-dismiss="modal"
-                          >
-                            Annuler
-                          </button>
-
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-xs dropdown-toggle"
-                          >
-                            Ajouter
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-primary btn-xs dropdown-toggle"
-                            data-toggle="modal"
-                            data-target="#EnvoyerParEmail"
-                          >
-                            Envoyer
-                          </button>
-                          <button
-                            type="button"
-                            routerLink="ImprimerDepense"
-                            class="btn btn-primary btn-xs dropdown-toggle"
-                            data-dismiss="modal"
-                          >
-                            Imprimer
-                          </button>
-                        </div>
-                      </div>
+                      </fieldset>
                     </form>
                   </div>
-                  <br /><br />
+                  <div class="col-lg-12">
+                    <br />
+                    <div class="row" class="text-right">
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-white btn-xs dropdown-toggle"
+                          data-dismiss="modal"
+                        >
+                          Annuler
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-xs dropdown-toggle"
+                        >
+                          Ajouter
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
