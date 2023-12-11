@@ -16,6 +16,8 @@ import { FournisseursComponent } from './components/fournisseurs/fournisseurs.co
 import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/ajouter-fournisseur.component';
 import { ModifierFournisseursComponent } from './components/modifier-fournisseurs/modifier-fournisseurs.component';
 import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
+import { CaisseComponent } from './components/caisse/caisse.component';
+import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -26,11 +28,12 @@ const routes: Routes = [
   { path: 'Repertoire', component: RepertoireComponent },
   { path: 'Cotisation', component: CotisationComponent },
   { path: 'Locaux', component: LocauxComponent },
-  { path: 'Encaisement', component: ActiviteEncaissementComponent },
+  { path: 'Caisse', component: CaisseComponent },
   { path: 'Versement', component: ActiviteVersementComponent },
   { path: 'Depense', component: ActiviteDepenseComponent },
   { path: 'Fournisseurs', component: FournisseursComponent },
   { path: 'ContratMain', component: ContratDomTraitmentComponent },
+  { path: 'Caisse/AfficherCaisee', component: AfficherCaisseComponent },
 
   { path: 'Fournisseurs/Ajouter', component: AjouterFournisseurComponent },
   { path: 'Fournisseurs/Modifier', component: ModifierFournisseursComponent },

@@ -16,15 +16,15 @@ import { DependancesComponent } from './components/dependances/dependances.compo
 import { AnnoncesComponent } from './components/annonces/annonces.component';
 import { RepertoireComponent } from './components/repertoire/repertoire.component';
 import { CotisationComponent } from './components/cotisation/cotisation.component';
-import { ActiviteDepenseComponent } from './components/activite-depense/activite-depense.component';
-import { ActiviteEncaissementComponent } from './components/activite-encaissement/activite-encaissement.component';
-import { ActiviteVersementComponent } from './components/activite-versement/activite-versement.component';
+
 import { FournisseursComponent } from './components/fournisseurs/fournisseurs.component';
 import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/ajouter-fournisseur.component';
 import { ModifierFournisseursComponent } from './components/modifier-fournisseurs/modifier-fournisseurs.component';
 import { AlertesFournisseursComponent } from './components/alertes-fournisseurs/alertes-fournisseurs.component';
 import { ComplementsFournisseurComponent } from './components/complements-fournisseur/complements-fournisseur.component';
 import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
+import { CaisseComponent } from './components/caisse/caisse.component';
+import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
 
 @NgModule({
   declarations: [
@@ -41,9 +41,6 @@ import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment
     DependancesComponent,
     AnnoncesComponent,
     RepertoireComponent,
-    ActiviteDepenseComponent,
-    ActiviteEncaissementComponent,
-    ActiviteVersementComponent,
     CotisationComponent,
     FournisseursComponent,
     AjouterFournisseurComponent,
@@ -51,6 +48,8 @@ import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment
     AlertesFournisseursComponent,
     ComplementsFournisseurComponent,
     ContratDomTraitmentComponent,
+    CaisseComponent,
+    AfficherCaisseComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
