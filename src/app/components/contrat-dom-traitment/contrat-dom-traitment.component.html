@@ -1,0 +1,767 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Contrats de Maintenance</h2>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+<div class="wrapper wrapper-content animated fadeInDown">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabs-container">
+        <div class="tab-content">
+          <div role="tabpanel" id="" class="tab-pane active">
+            <div class="panel-body">
+              <div class="row mb-3">
+                <div
+                  class="col-12 col-sm-12 align-self-center pt-1 pt-sm-0 text-right"
+                >
+                  <button
+                    data-toggle="modal"
+                    data-target="#myModal"
+                    class="btn btn-lg btn-outline-primary"
+                    class="btn btn-outline btn-info add dim"
+                    title="Ajouter"
+                  >
+                    <i class="fa fa-plus"></i>
+                  </button>
+                  <div
+                    class="modal inmodal"
+                    id="myModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                          >
+                            <span aria-hidden="true">&times;</span
+                            ><span class="sr-only">Fermer</span>
+                          </button>
+
+                          <h4 class="modal-title">
+                            Ajouter Contrat de Maintenance
+                          </h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <form>
+                                <div class="form-row text-left">
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault03"
+                                      >Fournisseur
+                                    </label>
+                                    <select class="form-control">
+                                      <option selected>
+                                        Selectionnez un Fournisseur
+                                      </option>
+                                      <option>xxx</option>
+                                      <option>yyyyy</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <label for="validationDefault04"
+                                      >Montant Annuel du contrat HT
+                                    </label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="validationDefault04"
+                                      placeholder=""
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="form-row text-left">
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationDefault03"
+                                      >Majoration Annuelle (%)</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="validationDefault04"
+                                      placeholder=""
+                                      required
+                                    />
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationDefault03"
+                                      >Date début
+                                    </label>
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      id=""
+                                      placeholder=""
+                                      required
+                                    />
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <label for="validationDefault03"
+                                      >Date fin</label
+                                    >
+                                    <input
+                                      type="date"
+                                      class="form-control"
+                                      id=""
+                                      placeholder=""
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="form-row text-left"></div>
+                                <br /><br />
+                              </form>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="row" class="text-right">
+                                <br /><br /><br />
+                                <div class="modal-footer">
+                                  <input
+                                    type="submit"
+                                    class="btn btn-xs btn-default"
+                                    data-dismiss="modal"
+                                    value="Annuler"
+                                  />
+                                  <input
+                                    type="submit"
+                                    data-dismiss="modal"
+                                    class="btn btn-xs btn-primary"
+                                    value="Ajouter"
+                                  />
+                                  <input
+                                    type="submit"
+                                    data-dismiss="modal"
+                                    class="btn btn-xs btn-primary"
+                                    value="Afficher"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <div
+                  id="table_Fournisseurs_wrapper"
+                  class="dataTables_wrapper dt-bootstrap4 no-footer"
+                >
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        class="dataTables_length"
+                        id="table_Fournisseurs_length"
+                      >
+                        <label
+                          >Afficher
+                          <select
+                            name="table_Fournisseurs_length"
+                            aria-controls="table_Fournisseurs"
+                            class="custom-select custom-select-sm form-control form-control-sm"
+                          >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                          </select>
+                          entrées
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <div
+                        id="table_Fournisseurs_filter"
+                        class="dataTables_filter"
+                      >
+                        <label
+                          >Rechercher :
+                          <input
+                            type="search"
+                            class="form-control form-control-sm"
+                            placeholder=""
+                            aria-controls="table_Fournisseurs"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="col-lg-12">
+                      <table
+                        id="table_Fournisseurs"
+                        class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                        role="grid"
+                        aria-describedby="table_Fournisseurs_info"
+                        style="width: 100%"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              N° Contrat
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Code
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Fournisseur
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date Début
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Date Fin
+                            </th>
+                            <th
+                              class="sorting"
+                              tabindex="0"
+                              aria-controls="table_Fournisseurs"
+                              rowspan="1"
+                              colspan="1"
+                              aria-label="Type : activer pour trier la colonne par ordre croissant"
+                              style="width: 10%"
+                            >
+                              Actions
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>123R455</td>
+                            <td>14/08/2023</td>
+                            <td>11234567</td>
+                            <td>SMS</td>
+                            <td>12/03/2023</td>
+                            <td>12/12/2023</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalRenouveler"
+                                      >Renouveler</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>123R455</td>
+                            <td>14/08/2023</td>
+                            <td>11234567</td>
+                            <td>SMS</td>
+                            <td>12/03/2023</td>
+                            <td>12/12/2023</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalRenouveler"
+                                      >Renouveler</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>123R455</td>
+                            <td>14/08/2023</td>
+                            <td>11234567</td>
+                            <td>SMS</td>
+                            <td>12/03/2023</td>
+                            <td>12/12/2023</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalRenouveler"
+                                      >Renouveler</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>123R455</td>
+                            <td>14/08/2023</td>
+                            <td>11234567</td>
+                            <td>SMS</td>
+                            <td>12/03/2023</td>
+                            <td>12/12/2023</td>
+
+                            <td class="overflow-hidden">
+                              <div class="btn-group">
+                                <button
+                                  data-toggle="dropdown"
+                                  class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
+                                >
+                                  Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalModifier"
+                                      >Modifier</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      data-toggle="modal"
+                                      data-target="#myModalRenouveler"
+                                      >Renouveler</a
+                                    >
+                                  </li>
+                                  <li><a href="#">Supprimer</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div
+                        class="modal inmodal"
+                        id="myModalModifier"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content animated bounceInRight">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                              >
+                                <span aria-hidden="true">&times;</span
+                                ><span class="sr-only">Fermer</span>
+                              </button>
+
+                              <h4 class="modal-title">
+                                Modifier Contrat de Maintenance
+                              </h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <form>
+                                    <div class="form-row text-left">
+                                      <div class="col-md-6 mb-3">
+                                        <label for="validationDefault03"
+                                          >Fournisseur
+                                        </label>
+                                        <select class="form-control">
+                                          <option selected>
+                                            Selectionnez un Fournisseur
+                                          </option>
+                                          <option>xxx</option>
+                                          <option>yyyyy</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label for="validationDefault04"
+                                          >Montant Annuel du contrat HT
+                                        </label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="form-row text-left">
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Majoration Annuelle (%)</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Date début
+                                        </label>
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id=""
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Date fin</label
+                                        >
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id=""
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="form-row text-left"></div>
+                                    <br /><br />
+                                  </form>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="row" class="text-right">
+                                    <br /><br /><br />
+                                    <div class="modal-footer">
+                                      <input
+                                        type="submit"
+                                        class="btn btn-xs btn-default"
+                                        data-dismiss="modal"
+                                        value="Annuler"
+                                      />
+                                      <input
+                                        type="submit"
+                                        data-dismiss="modal"
+                                        class="btn btn-xs btn-primary"
+                                        value="Modifier"
+                                      />
+                                      <input
+                                        type="submit"
+                                        data-dismiss="modal"
+                                        class="btn btn-xs btn-primary"
+                                        value="Afficher"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="modal inmodal"
+                        id="myModalRenouveler"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content animated bounceInRight">
+                            <div class="modal-header">
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                              >
+                                <span aria-hidden="true">&times;</span
+                                ><span class="sr-only">Fermer</span>
+                              </button>
+
+                              <h4 class="modal-title">
+                                Renouveler Contrat de Maintenance
+                              </h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <form>
+                                    <div class="form-row text-left">
+                                      <div class="col-md-6 mb-3">
+                                        <label for="validationDefault03"
+                                          >Fournisseur
+                                        </label>
+                                        <select class="form-control">
+                                          <option selected>
+                                            Selectionnez un Fournisseur
+                                          </option>
+                                          <option>xxx</option>
+                                          <option>yyyyy</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label for="validationDefault04"
+                                          >Montant Annuel du contrat HT
+                                        </label>
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="form-row text-left">
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Majoration Annuelle (%)</label
+                                        >
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="validationDefault04"
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Date début
+                                        </label>
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id=""
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                        <label for="validationDefault03"
+                                          >Date fin</label
+                                        >
+                                        <input
+                                          type="date"
+                                          class="form-control"
+                                          id=""
+                                          placeholder=""
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="form-row text-left"></div>
+                                    <br /><br />
+                                  </form>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="row" class="text-right">
+                                    <br /><br /><br />
+                                    <div class="modal-footer">
+                                      <input
+                                        type="submit"
+                                        class="btn btn-xs btn-default"
+                                        data-dismiss="modal"
+                                        value="Annuler"
+                                      />
+                                      <input
+                                        type="submit"
+                                        data-dismiss="modal"
+                                        class="btn btn-xs btn-primary"
+                                        value="Renouveler"
+                                      />
+                                      <input
+                                        type="submit"
+                                        data-dismiss="modal"
+                                        class="btn btn-xs btn-primary"
+                                        value="Afficher"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="table_Fournisseurs_processing"
+                        class="dataTables_processing card"
+                        style="display: none"
+                      >
+                        Traitement...
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                      <div
+                        class="dataTables_info"
+                        id="table_Fournisseurs_info"
+                        role="status"
+                        aria-live="polite"
+                      >
+                        Affichage de 1 à 10 sur 18 entrées
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="table_Fournisseurs_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button page-item previous disabled"
+                            id="table_Fournisseurs_previous"
+                          >
+                            <a
+                              aria-controls="table_Fournisseurs"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              class="page-link"
+                              >Précédent</a
+                            >
+                          </li>
+                          <li class="paginate_button page-item active">
+                            <a
+                              aria-controls="table_Fournisseurs"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              class="page-link"
+                              >1</a
+                            >
+                          </li>
+
+                          <li class="paginate_button page-item">
+                            <a
+                              aria-controls="table_Fournisseurs"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              class="page-link"
+                              >2</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button page-item next"
+                            id="table_Fournisseurs_next"
+                          >
+                            <a
+                              aria-controls="table_Fournisseurs"
+                              data-dt-idx="3"
+                              tabindex="0"
+                              class="page-link"
+                              >Suivant</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

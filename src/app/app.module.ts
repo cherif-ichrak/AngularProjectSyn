@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -20,6 +19,12 @@ import { CotisationComponent } from './components/cotisation/cotisation.componen
 import { ActiviteDepenseComponent } from './components/activite-depense/activite-depense.component';
 import { ActiviteEncaissementComponent } from './components/activite-encaissement/activite-encaissement.component';
 import { ActiviteVersementComponent } from './components/activite-versement/activite-versement.component';
+import { FournisseursComponent } from './components/fournisseurs/fournisseurs.component';
+import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/ajouter-fournisseur.component';
+import { ModifierFournisseursComponent } from './components/modifier-fournisseurs/modifier-fournisseurs.component';
+import { AlertesFournisseursComponent } from './components/alertes-fournisseurs/alertes-fournisseurs.component';
+import { ComplementsFournisseurComponent } from './components/complements-fournisseur/complements-fournisseur.component';
+import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +45,14 @@ import { ActiviteVersementComponent } from './components/activite-versement/acti
     ActiviteEncaissementComponent,
     ActiviteVersementComponent,
     CotisationComponent,
+    FournisseursComponent,
+    AjouterFournisseurComponent,
+    ModifierFournisseursComponent,
+    AlertesFournisseursComponent,
+    ComplementsFournisseurComponent,
+    ContratDomTraitmentComponent,
   ],
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
   bootstrap: [AppComponent],
 })

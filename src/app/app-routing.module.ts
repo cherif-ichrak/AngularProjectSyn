@@ -12,6 +12,10 @@ import { CotisationComponent } from './components/cotisation/cotisation.componen
 import { ActiviteEncaissementComponent } from './components/activite-encaissement/activite-encaissement.component';
 import { ActiviteVersementComponent } from './components/activite-versement/activite-versement.component';
 import { ActiviteDepenseComponent } from './components/activite-depense/activite-depense.component';
+import { FournisseursComponent } from './components/fournisseurs/fournisseurs.component';
+import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/ajouter-fournisseur.component';
+import { ModifierFournisseursComponent } from './components/modifier-fournisseurs/modifier-fournisseurs.component';
+import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -25,6 +29,11 @@ const routes: Routes = [
   { path: 'Encaisement', component: ActiviteEncaissementComponent },
   { path: 'Versement', component: ActiviteVersementComponent },
   { path: 'Depense', component: ActiviteDepenseComponent },
+  { path: 'Fournisseurs', component: FournisseursComponent },
+  { path: 'ContratMain', component: ContratDomTraitmentComponent },
+
+  { path: 'Fournisseurs/Ajouter', component: AjouterFournisseurComponent },
+  { path: 'Fournisseurs/Modifier', component: ModifierFournisseursComponent },
 ];
 
 @NgModule({
