@@ -18,6 +18,7 @@ import { ModifierFournisseursComponent } from './components/modifier-fournisseur
 import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
 import { CaisseComponent } from './components/caisse/caisse.component';
 import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
+import { DepenseServicesComponent } from './components/depense-services/depense-services.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -31,7 +32,9 @@ const routes: Routes = [
   { path: 'Caisse', component: CaisseComponent },
   { path: 'Versement', component: ActiviteVersementComponent },
   { path: 'Depense', component: ActiviteDepenseComponent },
+  { path: 'DepenseServices', component: DepenseServicesComponent },
   { path: 'Fournisseurs', component: FournisseursComponent },
+
   { path: 'ContratMain', component: ContratDomTraitmentComponent },
   { path: 'Caisse/AfficherCaisee', component: AfficherCaisseComponent },
 

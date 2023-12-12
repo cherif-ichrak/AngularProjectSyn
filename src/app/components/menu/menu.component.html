@@ -45,22 +45,15 @@
           ></a>
           <ul class="nav nav-second-level collapse">
             <li>
-              <a routerLink="Bloc"
-                ><span class="nav-label">Bloc</span
-                ><span class="fa arrow"></span
-              ></a>
+              <a routerLink="Bloc"><span class="nav-label">Bloc</span></a>
             </li>
             <li>
-              <a routerLink="Locaux"
-                ><span class="nav-label">Locaux</span
-                ><span class="fa arrow"></span
-              ></a>
+              <a routerLink="Locaux"><span class="nav-label">Locaux</span></a>
             </li>
             <li>
               <a routerLink="Dependances"
-                ><span class="nav-label">Dépendances</span
-                ><span class="fa arrow"></span
-              ></a>
+                ><span class="nav-label">Dépendances</span></a
+              >
             </li>
           </ul>
         </li>
@@ -78,10 +71,40 @@
             <span class="nav-label">Annonces</span></a
           >
         </li>
+
         <li>
-          <a routerLink="Caisse"
-            ><i class="fa fa-usd"></i> <span class="nav-label">Caisse </span></a
-          >
+          <a
+            ><i class="fa fa-usd"></i> <span class="nav-label">Finance </span
+            ><span class="fa arrow"></span
+          ></a>
+          <ul class="nav nav-second-level collapse">
+            <li>
+              <a routerLink="Caisse"> <span class="nav-label">Caisse </span></a>
+            </li>
+            <li>
+              <a routerLink="Ordre"
+                ><span class="nav-label">Ordre de Paiement</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            ><i class="fa fa-share-alt-square"></i>
+            <span class="nav-label">Suivi </span><span class="fa arrow"></span
+          ></a>
+          <ul class="nav nav-second-level collapse">
+            <li>
+              <a routerLink="Caisse">
+                <span class="nav-label">Encaissement</span></a
+              >
+            </li>
+            <li>
+              <a routerLink="Ordre"
+                ><span class="nav-label">Décaissement</span></a
+              >
+            </li>
+          </ul>
         </li>
         <li>
           <a
@@ -91,21 +114,23 @@
           <ul class="nav nav-second-level collapse">
             <li>
               <a routerLink="Fournisseurs"
-                ><span class="nav-label">Fournisseurs</span
-                ><span class="fa arrow"></span
-              ></a>
+                ><span class="nav-label">Fournisseurs</span></a
+              >
             </li>
             <li>
               <a routerLink="Versement"
-                ><span class="nav-label">Dépenses</span
-                ><span class="fa arrow"></span
-              ></a>
+                ><span class="nav-label">Factures</span></a
+              >
+            </li>
+            <li>
+              <a routerLink="DepenseServices"
+                ><span class="nav-label">Dépenses</span></a
+              >
             </li>
             <li>
               <a routerLink="ContratMain"
-                ><span class="nav-label">Contrats de Maintenance</span
-                ><span class="fa arrow"></span
-              ></a>
+                ><span class="nav-label">Contrats de Maintenance</span></a
+              >
             </li>
           </ul>
         </li>
@@ -126,7 +151,7 @@
         <div class="col-12 ownerCard text-center">
           Powered BY
           <br />
-          <img src="assets/img/murex.png" class="mw-100" />
+          <img src="assets/img/murex.png" />
           <br />
           © 2023 - ALL RIGHTS RESERVED<br />Murex business solutions
         </div>

@@ -25,6 +25,7 @@ import { ComplementsFournisseurComponent } from './components/complements-fourni
 import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment/contrat-dom-traitment.component';
 import { CaisseComponent } from './components/caisse/caisse.component';
 import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
+import { DepenseServicesComponent } from './components/depense-services/depense-services.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-c
     ContratDomTraitmentComponent,
     CaisseComponent,
     AfficherCaisseComponent,
+    DepenseServicesComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
