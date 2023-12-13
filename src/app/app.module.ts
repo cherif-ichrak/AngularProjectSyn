@@ -31,6 +31,9 @@ import { SuiviEncaissementComponent } from './components/suivi-encaissement/suiv
 import { SuiviDecaissementComponent } from './components/suivi-decaissement/suivi-decaissement.component';
 import { SuiviVirementComponent } from './components/suivi-virement/suivi-virement.component';
 import { DashboradComponent } from './components/dashborad/dashborad.component';
+import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
+import { FacturesComponent } from './components/factures/factures.component';
+import { IchrakComponent } from './components/ichrak/ichrak.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +65,9 @@ import { DashboradComponent } from './components/dashborad/dashborad.component';
     SuiviDecaissementComponent,
     SuiviVirementComponent,
     DashboradComponent,
+    SuiviVersementComponent,
+    FacturesComponent,
+    IchrakComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne

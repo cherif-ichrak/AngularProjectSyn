@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArchiveComponent } from './archive.component';
+import { IchrakComponent } from './ichrak.component';
 
-describe('ArchiveComponent', () => {
-  let component: ArchiveComponent;
-  let fixture: ComponentFixture<ArchiveComponent>;
+describe('IchrakComponent', () => {
+  let component: IchrakComponent;
+  let fixture: ComponentFixture<IchrakComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ArchiveComponent]
+      declarations: [IchrakComponent]
     });
-    fixture = TestBed.createComponent(ArchiveComponent);
+    fixture = TestBed.createComponent(IchrakComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

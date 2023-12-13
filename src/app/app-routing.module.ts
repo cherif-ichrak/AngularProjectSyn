@@ -21,6 +21,9 @@ import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-c
 import { DepenseServicesComponent } from './components/depense-services/depense-services.component';
 import { OrdrePaiementComponent } from './components/ordre-paiement/ordre-paiement.component';
 import { SuiviDecaissementComponent } from './components/suivi-decaissement/suivi-decaissement.component';
+import { SuiviEncaissementComponent } from './components/suivi-encaissement/suivi-encaissement.component';
+import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
+import { FacturesComponent } from './components/factures/factures.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -32,12 +35,14 @@ const routes: Routes = [
   { path: 'Cotisation', component: CotisationComponent },
   { path: 'Locaux', component: LocauxComponent },
   { path: 'Caisse', component: CaisseComponent },
-  { path: 'Versement', component: ActiviteVersementComponent },
-  { path: 'Depense', component: ActiviteDepenseComponent },
   { path: 'DepenseServices', component: DepenseServicesComponent },
   { path: 'Fournisseurs', component: FournisseursComponent },
   { path: 'OrdrePaiement', component: OrdrePaiementComponent },
   { path: 'SuiviDecaissement', component: SuiviDecaissementComponent },
+  { path: 'SuiviEncaissement', component: SuiviEncaissementComponent },
+
+  { path: 'SuiviVersement', component: SuiviVersementComponent },
+  { path: 'Factures', component: FacturesComponent },
 
   { path: 'ContratMain', component: ContratDomTraitmentComponent },
   { path: 'Caisse/AfficherCaisee', component: AfficherCaisseComponent },
