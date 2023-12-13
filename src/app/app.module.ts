@@ -30,7 +30,7 @@ import { OrdrePaiementComponent } from './components/ordre-paiement/ordre-paieme
 import { SuiviEncaissementComponent } from './components/suivi-encaissement/suivi-encaissement.component';
 import { SuiviDecaissementComponent } from './components/suivi-decaissement/suivi-decaissement.component';
 import { SuiviVirementComponent } from './components/suivi-virement/suivi-virement.component';
-import { HomeComponent } from './components/home/home.component';
+import { DashboradComponent } from './components/dashborad/dashborad.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,7 @@ import { HomeComponent } from './components/home/home.component';
     SuiviEncaissementComponent,
     SuiviDecaissementComponent,
     SuiviVirementComponent,
-    HomeComponent,
+    DashboradComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
