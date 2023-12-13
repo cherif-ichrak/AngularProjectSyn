@@ -26,6 +26,11 @@ import { ContratDomTraitmentComponent } from './components/contrat-dom-traitment
 import { CaisseComponent } from './components/caisse/caisse.component';
 import { AfficherCaisseComponent } from './components/afficher-caisse/afficher-caisse.component';
 import { DepenseServicesComponent } from './components/depense-services/depense-services.component';
+import { OrdrePaiementComponent } from './components/ordre-paiement/ordre-paiement.component';
+import { SuiviEncaissementComponent } from './components/suivi-encaissement/suivi-encaissement.component';
+import { SuiviDecaissementComponent } from './components/suivi-decaissement/suivi-decaissement.component';
+import { SuiviVirementComponent } from './components/suivi-virement/suivi-virement.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +57,11 @@ import { DepenseServicesComponent } from './components/depense-services/depense-
     CaisseComponent,
     AfficherCaisseComponent,
     DepenseServicesComponent,
+    OrdrePaiementComponent,
+    SuiviEncaissementComponent,
+    SuiviDecaissementComponent,
+    SuiviVirementComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
