@@ -121,8 +121,28 @@
                                         <br />
                                         <fieldset>
                                           <legend class="text-left">
-                                            Cotisation Montant appliquer à Tous
+                                            Type Exceptionnelle
                                           </legend>
+                                          <div class="form-group text-left">
+                                            <div class="col-lg-10">
+                                              <label class="">Montant</label>
+                                              <input
+                                                class="form-control"
+                                                type="text"
+                                                placeholder=""
+                                              />
+                                            </div>
+                                            <div class="col-lg-1">
+                                              <label class=""><br /></label>
+                                              <input
+                                                class="btn btn-xs btn-primary"
+                                                value="Appliquer"
+                                                type="submit"
+                                              />
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
                                           <div class="form-group text-left">
                                             <div class="panel-body">
                                               <div class="table-responsive">
@@ -656,7 +676,7 @@
                                       aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
                                       style="width: 10%"
                                     >
-                                      Cotisation
+                                      N° Cotisation
                                     </th>
                                     <th
                                       class="sorting"
@@ -721,7 +741,7 @@
                                       rowspan="1"
                                       colspan="1"
                                       aria-label="Type : activer pour trier la colonne par ordre croissant"
-                                      style="width: 10%"
+                                      style="width: 5%"
                                     >
                                       Actions
                                     </th>
@@ -752,16 +772,16 @@
                                               >Modifier</a
                                             >
                                           </li>
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>COT23001</td>
-                                    <td>Frais Syndique</td>
-                                    <td>L.1.1.A</td>
-                                    <td>200</td>
+                                    <td>COT23002</td>
+                                    <td>Exceptionnelle</td>
+                                    <td>L.1.2.A</td>
+                                    <td>500</td>
                                     <td>01/01/2023</td>
                                     <td>30/03/2023</td>
                                     <td class="overflow-hidden">
@@ -780,16 +800,16 @@
                                               >Modifier</a
                                             >
                                           </li>
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>COT23001</td>
+                                    <td>COT23003</td>
                                     <td>Frais Syndique</td>
-                                    <td>L.1.1.A</td>
-                                    <td>200</td>
+                                    <td>L.1.3.A</td>
+                                    <td>350</td>
                                     <td>01/01/2023</td>
                                     <td>30/03/2023</td>
                                     <td class="overflow-hidden">
@@ -808,16 +828,16 @@
                                               >Modifier</a
                                             >
                                           </li>
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>COT23001</td>
-                                    <td>Frais Syndique</td>
-                                    <td>L.1.1.A</td>
-                                    <td>200</td>
+                                    <td>COT23004</td>
+                                    <td>Exceptionnelle</td>
+                                    <td>L.1.1.B</td>
+                                    <td>235</td>
                                     <td>01/01/2023</td>
                                     <td>30/03/2023</td>
                                     <td class="overflow-hidden">
@@ -836,7 +856,7 @@
                                               >Modifier</a
                                             >
                                           </li>
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
@@ -872,786 +892,66 @@
                                       <div class="row">
                                         <div class="col-lg-12">
                                           <form>
-                                            <fieldset>
-                                              <legend class="text-left">
-                                                Cotisation
-                                              </legend>
-                                              <div class="form-group text-left">
-                                                <div class="col-lg-2">
-                                                  <label class="">Type </label>
-                                                  <select class="form-control">
-                                                    <option
-                                                      value=""
-                                                      selected
-                                                    ></option>
-                                                    <option value="choix1">
-                                                      Frais Syndic
-                                                    </option>
-                                                    <option value="choix2">
-                                                      Exceptionnelle
-                                                    </option>
-                                                  </select>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                  <label class=""
-                                                    >Date Début
-                                                  </label>
-                                                  <input
-                                                    class="form-control"
-                                                    type="date"
-                                                  />
-                                                </div>
-                                                <div class="col-lg-3">
-                                                  <label class=""
-                                                    >Date Fin
-                                                  </label>
-                                                  <input
-                                                    class="form-control"
-                                                    type="date"
-                                                  />
-                                                </div>
-                                                <div class="col-lg-2">
-                                                  <label class=""
-                                                    >Génération</label
-                                                  >
-                                                  <input
-                                                    class="form-control"
-                                                    type="text"
-                                                    placeholder="Trimestrielle"
-                                                    disabled
-                                                  />
-                                                </div>
-                                                <div class="col-lg-2">
-                                                  <label class="">Note</label>
-                                                  <input
-                                                    class="form-control"
-                                                    type="text"
-                                                    placeholder=""
-                                                  />
-                                                </div>
+                                            <div class="form-group text-left">
+                                              <div class="col-lg-12">
+                                                <input
+                                                  class="form-control text-center"
+                                                  type="text"
+                                                  placeholder="N° Cotisation : COT0023"
+                                                  disabled
+                                                />
                                               </div>
-                                            </fieldset>
-                                            <br />
-                                            <fieldset>
-                                              <div class="form-group text-left">
-                                                <div class="panel-body">
-                                                  <div class="table-responsive">
-                                                    <table
-                                                      class="table table-stripped table-bordered"
-                                                      style="width: 100%"
-                                                    >
-                                                      <thead>
-                                                        <tr>
-                                                          <th
-                                                            style="width: 5%"
-                                                          ></th>
-                                                          <th
-                                                            style="width: 10%"
-                                                          >
-                                                            Local
-                                                          </th>
-                                                          <th
-                                                            style="width: 10%"
-                                                          >
-                                                            Montant
-                                                          </th>
-                                                          <th
-                                                            style="width: 20%"
-                                                          >
-                                                            Date Début
-                                                          </th>
-                                                          <th
-                                                            style="width: 20%"
-                                                          >
-                                                            Date Fin
-                                                          </th>
-                                                          <th
-                                                            style="width: 10%"
-                                                          >
-                                                            Actions
-                                                          </th>
-                                                        </tr>
-                                                      </thead>
-                                                      <tbody>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 1</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 2</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 3</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 4</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 5</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 6</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 7</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <input
-                                                              type="checkbox"
-                                                              checked
-                                                              class="i-checks"
-                                                              name="input[]"
-                                                            />
-                                                          </td>
-                                                          <td>Local 8</td>
-                                                          <td>
-                                                            <input
-                                                              type="text"
-                                                              class="form-control"
-                                                              placeholder=""
-                                                            />
-                                                          </td>
-
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td>
-                                                            <div
-                                                              class="input-group date"
-                                                            >
-                                                              <span
-                                                                class="input-group-addon"
-                                                                ><i
-                                                                  class="fa fa-calendar"
-                                                                ></i></span
-                                                              ><input
-                                                                type="text"
-                                                                class="form-control"
-                                                                value="07/01/2014"
-                                                              />
-                                                            </div>
-                                                          </td>
-                                                          <td
-                                                            class="overflow-hidden"
-                                                          >
-                                                            <div
-                                                              class="btn-group"
-                                                            >
-                                                              <button
-                                                                data-toggle="dropdown"
-                                                                class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                                              >
-                                                                Action
-                                                                <span
-                                                                  class="caret"
-                                                                ></span>
-                                                              </button>
-                                                              <ul
-                                                                class="dropdown-menu"
-                                                              >
-                                                                <li>
-                                                                  <a
-                                                                    data-toggle="modal"
-                                                                    data-target="#myModalContactsModifier"
-                                                                    >Modifier</a
-                                                                  >
-                                                                </li>
-                                                                <li>
-                                                                  <a href="#"
-                                                                    >Supprimer</a
-                                                                  >
-                                                                </li>
-                                                              </ul>
-                                                            </div>
-                                                          </td>
-                                                        </tr>
-                                                      </tbody>
-                                                    </table>
-                                                  </div>
-                                                </div>
+                                            </div>
+                                            <div class="form-group text-left">
+                                              <div class="col-lg-3">
+                                                <label class="">Type </label>
+                                                <select class="form-control">
+                                                  <option
+                                                    value=""
+                                                    selected
+                                                  ></option>
+                                                  <option value="choix1">
+                                                    Frais Syndic
+                                                  </option>
+                                                  <option value="choix2">
+                                                    Exceptionnelle
+                                                  </option>
+                                                </select>
                                               </div>
-                                            </fieldset>
-                                            <br />
+                                              <div class="col-lg-3">
+                                                <label class="">Local</label>
+                                                <select class="form-control">
+                                                  <option
+                                                    value=""
+                                                    selected
+                                                  ></option>
+                                                  <option value="choix1">
+                                                    Local 1
+                                                  </option>
+                                                  <option value="choix2">
+                                                    Local 2
+                                                  </option>
+                                                </select>
+                                              </div>
+                                              <div class="col-lg-3">
+                                                <label class=""
+                                                  >Date Début
+                                                </label>
+                                                <input
+                                                  class="form-control"
+                                                  type="date"
+                                                />
+                                              </div>
+                                              <div class="col-lg-3">
+                                                <label class=""
+                                                  >Date Fin
+                                                </label>
+                                                <input
+                                                  class="form-control"
+                                                  type="date"
+                                                />
+                                              </div>
+                                            </div>
                                           </form>
                                         </div>
                                         <div class="col-lg-12">

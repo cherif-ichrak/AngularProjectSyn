@@ -92,28 +92,7 @@
                                           </div>
                                           <div class="form-group text-left">
                                             <div class="col-lg-6">
-                                              <label class=""
-                                                >Surface Globale</label
-                                              >
-                                              <input
-                                                class="form-control"
-                                                type="text"
-                                              />
-                                            </div>
-
-                                            <div class="col-lg-6">
                                               <label class="">Surface </label>
-                                              <input
-                                                class="form-control"
-                                                type="text"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div class="form-group text-left">
-                                            <div class="col-lg-6">
-                                              <label class=""
-                                                >Solde antérieur
-                                              </label>
                                               <input
                                                 class="form-control"
                                                 type="text"
@@ -126,6 +105,27 @@
                                               <input
                                                 class="form-control"
                                                 type="text"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="form-group text-left">
+                                            <div class="col-lg-6">
+                                              <label class=""
+                                                >Surface Globale</label
+                                              >
+                                              <input
+                                                class="form-control"
+                                                type="text"
+                                              />
+                                            </div>
+                                            <div class="col-lg-6">
+                                              <label class=""
+                                                >Solde antérieur
+                                              </label>
+                                              <input
+                                                class="form-control"
+                                                type="text"
+                                                placeholder="Creation de Cotisation si Solde Antérieur Supérieur à 0"
                                               />
                                             </div>
                                           </div>
@@ -358,7 +358,7 @@
                                       rowspan="1"
                                       colspan="1"
                                       aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
-                                      style="width: 10%"
+                                      style="width: 20%"
                                     >
                                       Type
                                     </th>
@@ -414,7 +414,7 @@
                                       rowspan="1"
                                       colspan="1"
                                       aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
-                                      style="width: 10%"
+                                      style="width: 20%"
                                     >
                                       Payeur
                                     </th>
@@ -425,7 +425,7 @@
                                       rowspan="1"
                                       colspan="1"
                                       aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
-                                      style="width: 10%"
+                                      style="width: 5%"
                                     >
                                       Nbrs Dépendances
                                     </th>
@@ -437,7 +437,7 @@
                                       rowspan="1"
                                       colspan="1"
                                       aria-label="Type : activer pour trier la colonne par ordre croissant"
-                                      style="width: 10%"
+                                      style="width: 5%"
                                     >
                                       Actions
                                     </th>
@@ -446,13 +446,18 @@
                                 <tbody>
                                   <tr>
                                     <td>Bloc 1.A</td>
-                                    <td>Commercial</td>
-                                    <td>L.1.1.A</td>
+                                    <td>Résidentiel</td>
+                                    <td>L.1.2.A</td>
                                     <td>200</td>
-                                    <td>Nizar Samet</td>
-                                    <td>Mahmoud Karabaka</td>
-                                    <td>Mahmoud Karabaka</td>
-                                    <td>2</td>
+                                    <td>Ahmed Dali</td>
+                                    <td>Marieme Isaa</td>
+                                    <td>Marieme Isaa</td>
+                                    <td
+                                      data-toggle="modal"
+                                      data-target="#myModalDependance"
+                                    >
+                                      2
+                                    </td>
 
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
@@ -479,12 +484,17 @@
                                     <td>Bloc 1.A</td>
                                     <td>Commercial</td>
                                     <td>L.1.1.A</td>
-                                    <td>200</td>
+                                    <td>550</td>
 
                                     <td>Nizar Samet</td>
                                     <td>Ahlem Ahlem</td>
                                     <td>Mahmoud Karabaka</td>
-                                    <td>2</td>
+                                    <td
+                                      data-toggle="modal"
+                                      data-target="#myModalDependance"
+                                    >
+                                      3
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -515,7 +525,12 @@
                                     <td>Ahmed Ahmed</td>
                                     <td>Ahlem Ahlem</td>
                                     <td>Mahmoud Karabaka</td>
-                                    <td>2</td>
+                                    <td
+                                      data-toggle="modal"
+                                      data-target="#myModalDependance"
+                                    >
+                                      2
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -538,16 +553,21 @@
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>Bloc 1.A</td>
-                                    <td>Commercial</td>
-                                    <td>L.1.1.A</td>
+                                    <td>Bloc 1.C</td>
+                                    <td>Résidentiel</td>
+                                    <td>L.1.2.A</td>
                                     <td>200</td>
 
                                     <td>Nizar Samet</td>
                                     <td>xxxxx</td>
                                     <td>xxxxx</td>
 
-                                    <td>2</td>
+                                    <td
+                                      data-toggle="modal"
+                                      data-target="#myModalDependance"
+                                    >
+                                      2
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -571,6 +591,101 @@
                                   </tr>
                                 </tbody>
                               </table>
+                              <div
+                                class="modal inmodal"
+                                id="myModalDependance"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog modal-lg">
+                                  <div
+                                    class="modal-content animated bounceInRight"
+                                  >
+                                    <div class="modal-header">
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                      >
+                                        <span aria-hidden="true">&times;</span
+                                        ><span class="sr-only">Fermer</span>
+                                      </button>
+
+                                      <h4 class="modal-title">
+                                        Affichage Dépendances
+                                      </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                        <div class="col-lg-12">
+                                          <table
+                                            id="table_clients"
+                                            class="table table-striped table-bordered table-hover dataTables-example dataTable no-footer"
+                                            role="grid"
+                                            aria-describedby="table_clients_info"
+                                            style="width: 100%"
+                                          >
+                                            <thead>
+                                              <tr>
+                                                <th
+                                                  class="sorting"
+                                                  tabindex="0"
+                                                  aria-controls="table_clients"
+                                                  rowspan="1"
+                                                  colspan="1"
+                                                  aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                                  style="width: 10%"
+                                                >
+                                                  Type
+                                                </th>
+
+                                                <th
+                                                  class="sorting"
+                                                  tabindex="0"
+                                                  aria-controls="table_clients"
+                                                  rowspan="1"
+                                                  colspan="1"
+                                                  aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                                  style="width: 10%"
+                                                >
+                                                  Dépendance
+                                                </th>
+
+                                                <th
+                                                  class="sorting"
+                                                  tabindex="0"
+                                                  aria-controls="table_clients"
+                                                  rowspan="1"
+                                                  colspan="1"
+                                                  aria-label="Intitulé : activer pour trier la colonne par ordre croissant"
+                                                  style="width: 10%"
+                                                >
+                                                  Surface (m2)
+                                                </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>Parking Sous-sol</td>
+
+                                                <td>D3.L.1.1.A</td>
+                                                <td>350</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Cellier</td>
+
+                                                <td>D4.L.1.1.A</td>
+                                                <td>200</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div
                                 class="modal inmodal"
                                 id="myModalModifier"

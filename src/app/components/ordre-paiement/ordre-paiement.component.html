@@ -211,12 +211,12 @@
                                                     <td>FA00123</td>
                                                     <td>01/01/2023</td>
                                                     <td></td>
-                                                    <td>FR00123</td>
+                                                    <td>FR00423</td>
                                                     <td class="text-right">
-                                                      200
+                                                      360
                                                     </td>
                                                     <td class="text-right">
-                                                      200
+                                                      350
                                                     </td>
                                                   </tr>
                                                   <tr>
@@ -228,15 +228,15 @@
                                                         name="input[]"
                                                       />
                                                     </td>
-                                                    <td>FA00123</td>
-                                                    <td>01/01/2023</td>
+                                                    <td>FA00223</td>
+                                                    <td>23/05/2023</td>
                                                     <td></td>
-                                                    <td>FR00123</td>
+                                                    <td>FR00523</td>
                                                     <td class="text-right">
-                                                      200
+                                                      760
                                                     </td>
                                                     <td class="text-right">
-                                                      200
+                                                      760
                                                     </td>
                                                   </tr>
                                                   <tr>
@@ -248,15 +248,15 @@
                                                         name="input[]"
                                                       />
                                                     </td>
-                                                    <td>FA00123</td>
-                                                    <td>01/01/2023</td>
+                                                    <td>FA00623</td>
+                                                    <td>22/05/2022</td>
                                                     <td></td>
-                                                    <td>FR00123</td>
+                                                    <td>FR00423</td>
                                                     <td class="text-right">
-                                                      200
+                                                      1 200
                                                     </td>
                                                     <td class="text-right">
-                                                      200
+                                                      1 200
                                                     </td>
                                                   </tr>
                                                 </tbody>
@@ -663,10 +663,13 @@
                               >
                                 <thead>
                                   <tr>
-                                    <th style="width: 10%">Ordre de Paiment</th>
-                                    <th style="width: 10%">Date Facture</th>
-                                    <th style="width: 10%">Facture</th>
+                                    <th style="width: 10%">
+                                      N° Ordre de Paiement
+                                    </th>
+
                                     <th style="width: 10%">Montant</th>
+                                    <th style="width: 10%">Type</th>
+                                    <th style="width: 10%">Ecart</th>
                                     <th style="width: 10%">Fournisseur</th>
                                     <th style="width: 10%">Notes</th>
                                     <th style="width: 10%">Action</th>
@@ -674,14 +677,15 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
-                                    <td>FA0023</td>
+                                    <td>OP00123</td>
 
                                     <td class="text-right">5 000.000</td>
-                                    <td>Fournisseur X</td>
-
-                                    <td>..........</td>
+                                    <td>Réglement Fournisseur</td>
+                                    <td>3</td>
+                                    <td>FA0001</td>
+                                    <td>
+                                      ...........................................................
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -699,19 +703,22 @@
                                             >
                                           </li>
 
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
+                                    <td>OP00223</td>
 
-                                    <td>..........</td>
+                                    <td class="text-right">1 000</td>
+                                    <td>Réglement Impayé</td>
+
+                                    <td>25</td>
+                                    <td>FA0002</td>
+                                    <td>
+                                      ...........................................................
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -729,19 +736,21 @@
                                             >
                                           </li>
 
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
+                                    <td>OP00223</td>
 
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
-                                    <td>..........</td>
+                                    <td class="text-right">3 300</td>
+                                    <td>Réglement Fournisseur</td>
+                                    <td>45</td>
+                                    <td>FA0003</td>
+                                    <td>
+                                      ...........................................................
+                                    </td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -759,49 +768,21 @@
                                             >
                                           </li>
 
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
                                   </tr>
                                   <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
+                                    <td>OP00223</td>
 
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
-                                    <td>..........</td>
-                                    <td class="overflow-hidden">
-                                      <div class="btn-group">
-                                        <button
-                                          data-toggle="dropdown"
-                                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                        >
-                                          Action <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li>
-                                            <a
-                                              data-toggle="modal"
-                                              data-target="#myModalModifier"
-                                              >Modifier</a
-                                            >
-                                          </li>
-
-                                          <li><a href="#">Supprimer</a></li>
-                                        </ul>
-                                      </div>
+                                    <td class="text-right">4 000</td>
+                                    <td>Réglement Fournisseur</td>
+                                    <td>12</td>
+                                    <td>FA0004</td>
+                                    <td>
+                                      ...........................................................
                                     </td>
-                                  </tr>
-                                  <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
-
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
-                                    <td>..........</td>
                                     <td class="overflow-hidden">
                                       <div class="btn-group">
                                         <button
@@ -819,67 +800,7 @@
                                             >
                                           </li>
 
-                                          <li><a href="#">Supprimer</a></li>
-                                        </ul>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
-
-                                    <td>..........</td>
-                                    <td class="overflow-hidden">
-                                      <div class="btn-group">
-                                        <button
-                                          data-toggle="dropdown"
-                                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                        >
-                                          Action <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li>
-                                            <a
-                                              data-toggle="modal"
-                                              data-target="#myModalModifier"
-                                              >Modifier</a
-                                            >
-                                          </li>
-
-                                          <li><a href="#">Supprimer</a></li>
-                                        </ul>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>ENC00123</td>
-                                    <td>12/03/2022</td>
-                                    <td>FA0023</td>
-                                    <td class="text-right">1 000</td>
-                                    <td>Fournisseur X</td>
-
-                                    <td>..........</td>
-                                    <td class="overflow-hidden">
-                                      <div class="btn-group">
-                                        <button
-                                          data-toggle="dropdown"
-                                          class="btn btn-primary btn-xs dropdown-toggle btn-xs dropdown-toggle"
-                                        >
-                                          Action <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li>
-                                            <a
-                                              data-toggle="modal"
-                                              data-target="#myModalModifier"
-                                              >Modifier</a
-                                            >
-                                          </li>
-
-                                          <li><a href="#">Supprimer</a></li>
+                                          <li><a>Supprimer</a></li>
                                         </ul>
                                       </div>
                                     </td>
@@ -1066,12 +987,12 @@
                                                         <td>FA00123</td>
                                                         <td>01/01/2023</td>
                                                         <td></td>
-                                                        <td>FR00123</td>
+                                                        <td>FR00423</td>
                                                         <td class="text-right">
-                                                          200
+                                                          360
                                                         </td>
                                                         <td class="text-right">
-                                                          200
+                                                          350
                                                         </td>
                                                       </tr>
                                                       <tr>
@@ -1083,15 +1004,15 @@
                                                             name="input[]"
                                                           />
                                                         </td>
-                                                        <td>FA00123</td>
-                                                        <td>01/01/2023</td>
+                                                        <td>FA00223</td>
+                                                        <td>23/05/2023</td>
                                                         <td></td>
-                                                        <td>FR00123</td>
+                                                        <td>FR00523</td>
                                                         <td class="text-right">
-                                                          200
+                                                          760
                                                         </td>
                                                         <td class="text-right">
-                                                          200
+                                                          760
                                                         </td>
                                                       </tr>
                                                       <tr>
@@ -1103,15 +1024,15 @@
                                                             name="input[]"
                                                           />
                                                         </td>
-                                                        <td>FA00123</td>
-                                                        <td>01/01/2023</td>
+                                                        <td>FA00623</td>
+                                                        <td>22/05/2022</td>
                                                         <td></td>
-                                                        <td>FR00123</td>
+                                                        <td>FR00423</td>
                                                         <td class="text-right">
-                                                          200
+                                                          1 200
                                                         </td>
                                                         <td class="text-right">
-                                                          200
+                                                          1 200
                                                         </td>
                                                       </tr>
                                                     </tbody>

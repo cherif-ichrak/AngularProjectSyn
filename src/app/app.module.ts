@@ -29,11 +29,9 @@ import { DepenseServicesComponent } from './components/depense-services/depense-
 import { OrdrePaiementComponent } from './components/ordre-paiement/ordre-paiement.component';
 import { SuiviEncaissementComponent } from './components/suivi-encaissement/suivi-encaissement.component';
 import { SuiviDecaissementComponent } from './components/suivi-decaissement/suivi-decaissement.component';
-import { SuiviVirementComponent } from './components/suivi-virement/suivi-virement.component';
 import { DashboradComponent } from './components/dashborad/dashborad.component';
-import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
 import { FacturesComponent } from './components/factures/factures.component';
-import { IchrakComponent } from './components/ichrak/ichrak.component';
+import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
 
 @NgModule({
   declarations: [
@@ -63,11 +61,10 @@ import { IchrakComponent } from './components/ichrak/ichrak.component';
     OrdrePaiementComponent,
     SuiviEncaissementComponent,
     SuiviDecaissementComponent,
-    SuiviVirementComponent,
-    DashboradComponent,
+
     SuiviVersementComponent,
+    DashboradComponent,
     FacturesComponent,
-    IchrakComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
