@@ -1,0 +1,6 @@
+fieldset {
+  border: 1px solid #ccc; /* couleur et épaisseur de la bordure */
+  border-radius: 5px; /* pour arrondir les coins de la bordure (facultatif) */
+  margin-bottom: 15px; /* espace entre les fieldsets */
+  padding: 15px; /* espacement à l'intérieur du fieldset */
+}

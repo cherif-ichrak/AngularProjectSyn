@@ -24,6 +24,14 @@ import { SuiviDecaissementComponent } from './components/suivi-decaissement/suiv
 import { SuiviEncaissementComponent } from './components/suivi-encaissement/suivi-encaissement.component';
 import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
 import { FacturesComponent } from './components/factures/factures.component';
+import { BiblioComponent } from './components/biblio/biblio.component';
+import { BrouillardCaisseComponent } from './components/brouillard-caisse/brouillard-caisse.component';
+import { BulletinCaisseComponent } from './components/bulletin-caisse/bulletin-caisse.component';
+import { BulletinDepenseComponent } from './components/bulletin-depense/bulletin-depense.component';
+import { BordereauVersementEspeceComponent } from './components/bordereau-versement-espece/bordereau-versement-espece.component';
+import { BordereauVersementChequeComponent } from './components/bordereau-versement-cheque/bordereau-versement-cheque.component';
+import { ImprimerOrdrePaiementComponent } from './components/imprimer-ordre-paiement/imprimer-ordre-paiement.component';
+import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -38,15 +46,42 @@ const routes: Routes = [
   { path: 'DepenseServices', component: DepenseServicesComponent },
   { path: 'Fournisseurs', component: FournisseursComponent },
   { path: 'OrdrePaiement', component: OrdrePaiementComponent },
+  { path: 'OrdrePaiement/AjouterOp', component: AjouterOPComponent },
+
+  {
+    path: 'OrdrePaiement/OrderPaiement',
+    component: ImprimerOrdrePaiementComponent,
+  },
+
   { path: 'SuiviDecaissement', component: SuiviDecaissementComponent },
   { path: 'SuiviEncaissement', component: SuiviEncaissementComponent },
 
   { path: 'SuiviVersement', component: SuiviVersementComponent },
   { path: 'Factures', component: FacturesComponent },
+  { path: 'Documents', component: BiblioComponent },
 
   { path: 'ContratMain', component: ContratDomTraitmentComponent },
   { path: 'Caisse/AfficherCaisee', component: AfficherCaisseComponent },
-
+  {
+    path: 'Caisse/AfficherCaisee/ImprimerBrouillard',
+    component: BrouillardCaisseComponent,
+  },
+  {
+    path: 'Caisse/AfficherCaisee/BulletinCaisse',
+    component: BulletinCaisseComponent,
+  },
+  {
+    path: 'Caisse/AfficherCaisee/BulletinDepense',
+    component: BulletinDepenseComponent,
+  },
+  {
+    path: 'Caisse/AfficherCaisee/ImprimerVersementEspece',
+    component: BordereauVersementEspeceComponent,
+  },
+  {
+    path: 'Caisse/AfficherCaisee/ImprimerVersementCheque',
+    component: BordereauVersementChequeComponent,
+  },
   { path: 'Fournisseurs/Ajouter', component: AjouterFournisseurComponent },
   { path: 'Fournisseurs/Modifier', component: ModifierFournisseursComponent },
 ];

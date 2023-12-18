@@ -1,0 +1,8 @@
+.grey-background {
+  background-color: #116977;
+  padding: 10px; /* Ajustez la valeur de padding selon vos besoins */
+  color: white; /* Couleur du texte, changez-la selon vos préférences */
+  width: 200px;
+  margin: 0 auto; /* Centre le titre horizontalement */
+  text-align: center; /* Centre le texte à l'intérieur du titre */
+}

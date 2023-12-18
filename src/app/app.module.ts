@@ -32,6 +32,14 @@ import { SuiviDecaissementComponent } from './components/suivi-decaissement/suiv
 import { DashboradComponent } from './components/dashborad/dashborad.component';
 import { FacturesComponent } from './components/factures/factures.component';
 import { SuiviVersementComponent } from './components/suivi-versement/suivi-versement.component';
+import { BiblioComponent } from './components/biblio/biblio.component';
+import { BrouillardCaisseComponent } from './components/brouillard-caisse/brouillard-caisse.component';
+import { BulletinCaisseComponent } from './components/bulletin-caisse/bulletin-caisse.component';
+import { BulletinDepenseComponent } from './components/bulletin-depense/bulletin-depense.component';
+import { BordereauVersementEspeceComponent } from './components/bordereau-versement-espece/bordereau-versement-espece.component';
+import { BordereauVersementChequeComponent } from './components/bordereau-versement-cheque/bordereau-versement-cheque.component';
+import { ImprimerOrdrePaiementComponent } from './components/imprimer-ordre-paiement/imprimer-ordre-paiement.component';
+import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +64,7 @@ import { SuiviVersementComponent } from './components/suivi-versement/suivi-vers
     ComplementsFournisseurComponent,
     ContratDomTraitmentComponent,
     CaisseComponent,
+    BiblioComponent,
     AfficherCaisseComponent,
     DepenseServicesComponent,
     OrdrePaiementComponent,
@@ -65,6 +74,13 @@ import { SuiviVersementComponent } from './components/suivi-versement/suivi-vers
     SuiviVersementComponent,
     DashboradComponent,
     FacturesComponent,
+    BrouillardCaisseComponent,
+    BulletinCaisseComponent,
+    BulletinDepenseComponent,
+    BordereauVersementEspeceComponent,
+    BordereauVersementChequeComponent,
+    ImprimerOrdrePaiementComponent,
+    AjouterOPComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
