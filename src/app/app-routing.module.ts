@@ -32,10 +32,15 @@ import { BordereauVersementEspeceComponent } from './components/bordereau-versem
 import { BordereauVersementChequeComponent } from './components/bordereau-versement-cheque/bordereau-versement-cheque.component';
 import { ImprimerOrdrePaiementComponent } from './components/imprimer-ordre-paiement/imprimer-ordre-paiement.component';
 import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component';
+import { CertificatRSComponent } from './components/certificat-rs/certificat-rs.component';
+import { TdbComponent } from './components/tdb/tdb.component';
+import { ImprimerCertificatComponent } from './components/imprimer-certificat/imprimer-certificat.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
   { path: 'ParametragePwd', component: ParametragePwdComponent },
+  { path: 'Tdb', component: TdbComponent },
+
   { path: 'Bloc', component: BlocComponent },
   { path: 'Dependances', component: DependancesComponent },
   { path: 'Annonces', component: AnnoncesComponent },
@@ -58,6 +63,12 @@ const routes: Routes = [
 
   { path: 'SuiviVersement', component: SuiviVersementComponent },
   { path: 'Factures', component: FacturesComponent },
+  { path: 'Certificat', component: CertificatRSComponent },
+  {
+    path: 'Certificat/ImprimerCertificat',
+    component: ImprimerCertificatComponent,
+  },
+
   { path: 'Documents', component: BiblioComponent },
 
   { path: 'ContratMain', component: ContratDomTraitmentComponent },

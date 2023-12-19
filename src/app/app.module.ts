@@ -40,6 +40,9 @@ import { BordereauVersementEspeceComponent } from './components/bordereau-versem
 import { BordereauVersementChequeComponent } from './components/bordereau-versement-cheque/bordereau-versement-cheque.component';
 import { ImprimerOrdrePaiementComponent } from './components/imprimer-ordre-paiement/imprimer-ordre-paiement.component';
 import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component';
+import { CertificatRSComponent } from './components/certificat-rs/certificat-rs.component';
+import { TdbComponent } from './components/tdb/tdb.component';
+import { ImprimerCertificatComponent } from './components/imprimer-certificat/imprimer-certificat.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +73,7 @@ import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component
     OrdrePaiementComponent,
     SuiviEncaissementComponent,
     SuiviDecaissementComponent,
-
+    TdbComponent,
     SuiviVersementComponent,
     DashboradComponent,
     FacturesComponent,
@@ -81,6 +84,8 @@ import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component
     BordereauVersementChequeComponent,
     ImprimerOrdrePaiementComponent,
     AjouterOPComponent,
+    CertificatRSComponent,
+    ImprimerCertificatComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne
