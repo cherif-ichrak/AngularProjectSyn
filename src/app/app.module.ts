@@ -43,6 +43,7 @@ import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component
 import { CertificatRSComponent } from './components/certificat-rs/certificat-rs.component';
 import { TdbComponent } from './components/tdb/tdb.component';
 import { ImprimerCertificatComponent } from './components/imprimer-certificat/imprimer-certificat.component';
+import { DetailsAnnonceComponent } from './components/details-annonce/details-annonce.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { ImprimerCertificatComponent } from './components/imprimer-certificat/im
     AjouterOPComponent,
     CertificatRSComponent,
     ImprimerCertificatComponent,
+    DetailsAnnonceComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [], // Ajoutez cette ligne

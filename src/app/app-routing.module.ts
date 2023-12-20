@@ -35,6 +35,7 @@ import { AjouterOPComponent } from './components/ajouter-op/ajouter-op.component
 import { CertificatRSComponent } from './components/certificat-rs/certificat-rs.component';
 import { TdbComponent } from './components/tdb/tdb.component';
 import { ImprimerCertificatComponent } from './components/imprimer-certificat/imprimer-certificat.component';
+import { DetailsAnnonceComponent } from './components/details-annonce/details-annonce.component';
 
 const routes: Routes = [
   { path: 'Parametrage', component: ParametrageComponent },
@@ -44,6 +45,8 @@ const routes: Routes = [
   { path: 'Bloc', component: BlocComponent },
   { path: 'Dependances', component: DependancesComponent },
   { path: 'Annonces', component: AnnoncesComponent },
+  { path: 'Annonces/Detail', component: DetailsAnnonceComponent },
+
   { path: 'Repertoire', component: RepertoireComponent },
   { path: 'Cotisation', component: CotisationComponent },
   { path: 'Locaux', component: LocauxComponent },
